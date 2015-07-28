@@ -156,6 +156,11 @@ header p {
               width: 100%;   
     }
     
+    #about p {
+              top: -15px;
+              font-size: 25vw;   
+    }
+    
     #projects {
               width: 100%;
             
@@ -197,7 +202,11 @@ header p {
     
     #about {
               width: 100%;
-              font-size: 90%;
+    }
+    
+    #about p {
+              top: 10px;
+              font-size: 30vw;   
     }
     
     #projects {
@@ -244,6 +253,11 @@ header p {
         font-size: 30vw;
         position: relative;
         top: 10%;
+    }
+    
+    #about p {
+              top: 20px;
+              font-size: 35vw;   
     }
     
 }
