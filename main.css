@@ -1,3 +1,8 @@
+html, body {
+margin:0;
+padding:0;
+}
+
 @font-face {
         font-family: "adamCG";
         src: url("fonts/ADAM.CG%20PRO.otf");
@@ -45,7 +50,8 @@ header {
 header h1 {
               font-size: 1200%;
               font-family: "adamCG";
-              color: rgba(193, 189, 189, 1.0);
+              color: rgb(149, 165, 166);
+              color: rgb(127, 140, 141);
               margin-top: 0px;
               margin-bottom: 0px;
               position: relative;
@@ -61,6 +67,7 @@ header p {
               font-family: adamCG;
               font-size: 126%;
               margin-top: 0px;
+              color: rgba(193, 189, 189, 1.0);
               left: 0px;
               top: 95%;
               z-index: 1;
@@ -70,24 +77,123 @@ header p {
               position: fixed;   
               width: 100%;
               background-color: rgba(248,242,242,1.0);
+              background-color: rgb(236, 240, 241);
 }
 
 #about {
               position: relative;
               top: 40px;
               background-color: rgba(217,174,232,1.0);
+              background-color: rgb(142, 68, 173);
               margin-right: 10px;
               width: 31%;
               
 }
 
-#about p {
+#about_text {
               position: absolute;
               left: 15%;
               margin: -65px 0px;
               font-size: 1600%;
               font-family: adamCG;
               color: rgba(253, 253, 253, 1.0);
+}
+
+#about_box {
+              position: absolute;
+              left: 0px;
+              background-color: rgba(0, 0, 0, 0.8);
+              width: 100%;
+              display: none;
+              text-decoration: none;
+              text-decoration-color: white;
+              padding-left: 15%;
+}
+
+#about_hover {
+              font-family: adamCG;
+              color: rgba(217,174,232,1.0);
+              font-size: 4.5vw;
+              text-align: left;
+              left: 45%;
+}
+
+#about_descrip {
+              position: relative;
+              text-decoration: none;
+              text-align: center;
+              width: 80%;
+              top: 0px;
+              padding-left: 10%;
+              color: rgba(253,253,253,1.0);
+              font-family: scala;
+}
+
+#project_box {
+              position: absolute;
+              left: 0px;
+              top: 0px;
+              background-color: rgba(0, 0, 0, 0.8);
+              width: 100%;
+              display: none;
+              text-decoration: none;
+              text-decoration-color: white;
+              z-index: 1;
+}
+
+#project_hover {
+              font-family: adamCG;
+              color: rgba(174,202,232,1.0);
+              text-align: left;
+              position: relative;
+              left: 5%;
+              font-size: 2vw;
+              margin-bottom: 2px;
+}
+
+#project_descrip {
+              position: relative;
+              text-decoration: none;
+              text-align: left;
+              width: 90%;
+              left: 5%;
+              font-size: 14px;
+              color: rgba(253,253,253,1.0);
+              font-family: scala;
+}
+
+#experience_box {
+              position: absolute;
+              left: 0px;
+              top: 0%;
+              background-color: rgba(0, 0, 0, 0.8);
+              width: 100%;
+              display: none;
+              text-decoration: none;
+              text-decoration-color: white;
+              z-index: 1;
+}
+
+#experience_hover {
+              font-family: adamCG;
+              color: #9BFFA0;
+              text-align: left;
+              position: relative;
+              font-size: 22px;
+              margin-bottom: 2px;
+              vertical-align:text-top;
+}
+
+#experience_descrip {
+              position: relative;
+              text-decoration: none;
+              text-align: left;
+              width: 90%;
+              left: 5%;
+              top: 8%;
+              font-size: 14px;
+              color: rgba(253,253,253,1.0);
+              font-family: scala;
 }
 
 #projExp {
@@ -100,15 +206,14 @@ header p {
               position: absolute;
               top: 0px;
               background-color: rgba(174,202,232,1.0);
+              background-color: rgb(41, 128, 185);
               height: 48.3%;
               width: 85%;
               color: rgba(253, 253, 253, 1.0);
               text-align: center;
-              
-              
 }
 
-#projects p {
+#projects h5 {
               position:relative;
               font-size: 5vw;
               top: 5%;
@@ -118,14 +223,14 @@ header p {
 #experiences {
               position: absolute;
               bottom: 0px;
-              background-color: rgba(211,191,255,1.0);
+              background-color: rgb(46, 204, 113);
               height: 48.3%;
               width: 85%;
               color: rgba(253, 253, 253, 1.0);
               text-align: center;
 }
 
-#experiences p {
+#experiences h5 {
               position: relative;
               top: 10%;
               font-size: 4.5vw;
@@ -136,20 +241,55 @@ header p {
               top: 40px;
               left: 0px;
               font-family: mohaveBI;
-              background-color: rgba(186,236,252,1.0);
+              background-color: rgb(26, 188, 156);
               text-align: center;
               margin-top: 10px;
               width: 67.2%;
     
 }
 
-#hobbies p {
+#hobbies h5 {
               position: relative;
               color: rgba(253, 253, 253, 1.0);
               font-size: 5.3vw;
               top: 5%;
               width: 100%;
 }
+
+#hobbies_box {
+              position: absolute;
+              left: 0px;
+              top: 0px;
+              background-color: rgba(0, 0, 0, 0.8);
+              width: 100%;
+              display: none;
+              text-decoration: none;
+              text-decoration-color: white;
+              z-index: 1;
+}
+
+#hobbies_hover {
+              font-family: adamCG;
+              color: rgba(174,202,232,1.0);
+              text-align: left;
+              position: absolute;
+              left: 3%;
+              font-size: 70px;
+              margin-bottom: 2px;
+}
+
+#hobbies_descrip {
+              position: absolute;
+              text-decoration: none;
+              text-align: left;
+              width: 60%;
+              left: 35%;
+              top: 15%;
+              font-size: 15px;
+              color: rgba(253,253,253,1.0);
+              font-family: scala;
+}
+
 
 @media screen and (max-width: 992px) {
     #about {
@@ -256,8 +396,8 @@ header p {
     }
     
     #about p {
-              top: -2%;
-              font-size: 50vw;   
+              font-size: 50vw;
+              position: relative;
     }
     
 }
