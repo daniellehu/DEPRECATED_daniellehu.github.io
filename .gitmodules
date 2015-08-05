@@ -1,0 +1,3 @@
+[submodule "Library/extensions"]
+	path = Library/extensions
+	url = https://github.com/jquery/jquery-color.git
