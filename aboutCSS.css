@@ -1,0 +1,318 @@
+@font-face {
+              font-family: "moon";
+              src: url("fonts/Moon%20Bold.otf");
+}
+
+@font-face {
+              font-family: "galano";
+              src: url("fonts/Galano%20Grotesque%20Alt.otf");
+}
+
+@font-face {
+              font-family: "scala";
+              src: url("fonts/Scala.otf");
+}
+
+@font-face {
+              font-family: "helvetica45";
+              src: url("fonts/HelveticaNeueLTCom-Lt.ttf");
+}
+
+@font-face {
+              font-family: "raleway";
+              src: url("fonts/Raleway-Medium.ttf");
+}
+
+@font-face {
+              font-family: "ralewayBold";
+              src: url("fonts/Raleway-Bold.ttf");
+}
+
+header {
+            position: fixed;
+            top: 0px;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.95);
+            z-index: 3;
+}
+header h1 {
+            position: relative;
+            top: 20%;
+            padding-left: 10%;
+            font-family: moon;
+            font-size: 300%;
+            width: 30%;
+}
+header ul {
+            position: fixed;
+            right: 0px;
+            top: 0px;
+            padding-right: 5%;
+            list-style-type: none;
+            text-decoration: none;
+            font-family: moon;
+            font-size: 140%;
+            display: none;
+            z-index: 5;
+}
+header li {
+    
+}
+header a { color: rgba(0, 0, 0, 0.5); text-decoration: none; }
+header a:hover { color: rgba(0, 0, 0, 1.0); text-decoration: none; }
+.navBox {
+                position: fixed;
+                top: 0px;
+                right: 0px;
+                background-color: rgba(255, 102, 102, 0.7);
+                z-index: 4;
+}    
+.arrow {
+                position: fixed;
+                width: 0px; 
+                height: 0px;
+                right: 0px;
+                opacity: 0.3;
+                border-left: 25px solid transparent; 
+                border-top: 25px solid transparent; 
+                border-right: 25px solid black; 
+                border-bottom: 25px solid transparent;
+                z-index: 5;
+}
+.navBox:hover { cursor: pointer; }
+.arrow:hover { cursor: pointer; opacity: 0.7;}
+
+section {
+            position: absolute;
+            background-color: rgba(236, 240, 240, 1.0);
+}
+
+#row1 {
+    
+}
+#r1c1 {
+            background-color: rgba(17,27,41,1.0);
+            padding-bottom: 10%;
+}
+#r1c1 h2 {
+            color: #FF6666;
+            padding-left: 10%;
+            font-family: ralewayBold;
+}
+#r1c1 p {
+            color: #ecf0f1;
+            width: 70%;
+            margin-left: 10%;
+            font-size: 14.5px;
+            font-family: raleway;
+            
+}
+#row1 img { display: none; }
+
+#row2 { color: rgba(44, 62, 80,1.0); }
+#row2 img { display: none; }
+#r2c1 {
+            background-color: #FFFFFF;
+
+}
+#r2c1 h2 {
+            font-family: ralewayBold;
+            
+            position: relative;
+            text-align: center;
+            
+}
+#skillArrow {
+            position: relative;
+            width: 0px; 
+            height: 0px;
+            left: 46%;
+            opacity: 0.3;
+            border-left: 25px solid transparent; 
+            border-top: 25px solid black; 
+            border-right: 25px solid transparent; 
+            border-bottom: 25px solid transparent;
+            padding-bottom: -25px;
+}
+#skillArrow:hover {
+            opacity: 0.8;
+            cursor: pointer;
+}
+#r2c1 p {
+            padding-bottom: 2%;
+            font-family: raleway;
+            padding-left: 10%;
+            display: none;
+}
+.skillOutline {
+            margin-top: -2%;
+            position: relative;
+            width: 80%;
+            height: 30px;
+            margin-left: 10%;
+            border-color: #FF6666;
+            border-width: 2px;
+            border-radius: 20px;
+            border-style: solid;
+            display: none;
+}
+#pythonBar {
+                position: absolute;
+                width: 75%;
+                left: 1%;
+                height: 80%;
+                top: 10%;
+                border-radius: 20px;
+                background-color: #FF6666;
+                animation: pyBar;
+                animation-duration: 4s;
+}
+@keyframes pyBar {
+    from { width: 1%; }
+    to { width: 75%; }
+}
+#cBar {
+                position: absolute;
+                width: 55%;
+                left: 1%;
+                height: 80%;
+                top: 10%;
+                border-radius: 20px;
+                background-color: #FF6666;
+                animation: cBar;
+                animation-duration: 4s;
+}
+@keyframes cBar {
+    from { width: 1%; }
+    to { width: 55%; }
+}
+#arduinoBar {
+                position: absolute;
+                width: 50%;
+                left: 1%;
+                height: 80%;
+                top: 10%;
+                border-radius: 20px;
+                background-color: #FF6666;
+                animation: arduinoBar;
+                animation-duration: 4s;
+}
+@keyframes arduinoBar {
+    from { width: 1%; }
+    to { width: 50%; }
+}
+#sqlBar {
+                position: absolute;
+                width: 55%;
+                left: 1%;
+                height: 80%;
+                top: 10%;
+                border-radius: 20px;
+                background-color: #FF6666;
+                animation: sqlBar;
+                animation-duration: 4s;
+}
+@keyframes sqlBar {
+    from { width: 1%; }
+    to { width: 55%; }
+}
+#htmlcssBar {
+                position: absolute;
+                width: 90%;
+                left: 1%;
+                height: 80%;
+                top: 10%;
+                border-radius: 20px;
+                background-color: #FF6666;
+                animation: htmlcssBar;
+                animation-duration: 4s;
+}
+@keyframes htmlcssBar {
+    from { width: 1%; }
+    to { width: 90%; }
+}
+#jsBar {
+                position: absolute;
+                width: 70%;
+                left: 1%;
+                height: 80%;
+                top: 10%;
+                border-radius: 20px;
+                background-color: #FF6666;
+                animation: jsBar;
+                animation-duration: 4s;
+}
+@keyframes jsBar {
+    from { width: 1%; }
+    to { width: 70%; }
+}
+#adobesBar {
+                position: absolute;
+                width: 60%;
+                left: 1%;
+                height: 80%;
+                top: 10%;
+                border-radius: 20px;
+                background-color: #FF6666;
+                animation: adobesBar;
+                animation-duration: 4s;
+}
+@keyframes adobesBar {
+    from { width: 1%; }
+    to { width: 60%; }
+}
+#learnBar {
+                position: absolute;
+                width: 98%;
+                left: 1%;
+                height: 80%;
+                top: 10%;
+                border-radius: 20px;
+                background-color: #FF6666;
+                animation: learnBar;
+                animation-duration: 4s;
+}
+@keyframes learnBar {
+    from { width: 1%; }
+    to { width: 98%; }
+}
+
+#row3 {
+            background-color: rgba(17,27,41,1.0);
+}
+#r3c1 h2 {
+            font-family: ralewayBold;
+            color: #FF6666;
+            text-align: center;
+}
+#r3c1 p {
+            font-family: raleway;
+            color: #ecf0f1;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.2em;
+}
+#row3 img { display: none; }
+
+#row4 {
+            background-color: #2E2E2E;
+}
+#contact {
+            text-align: center;
+            padding: 20px 0px;
+}
+#contact h2 {
+            color: #FF6666;
+            font-family: ralewayBold;
+}
+#contact p {
+            color: rgba(236, 240, 240, 1.0);
+            text-decoration: none;
+            font-size: 1.2em;
+}
+#contact a {
+            color: rgba(236, 240, 240, 1.0);;
+            margin: 0px 15px;
+}

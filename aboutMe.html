@@ -12,19 +12,19 @@
         <title>Danielle Hu</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="aboutMain.css">
+        <link rel="stylesheet" type="text/css" href="aboutCSS.css">
         <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-        <script src="aboutBobsBurgers.js"></script>
+        <script src="aboutJS.js"></script>
         <script src="jquery-color/jquery.color.js"></script>
     </head>
     
     <body class="container-fluid">
         <header class="row">
-                <div><span class="arrow"></span></div>
+                <div class="navBox"><span class="arrow"></span></div>
                 <h1>Danielle Hu</h1>
                 <ul>
                     <li><a style="color: #e74c3c">About</a></li>
@@ -58,31 +58,31 @@
                     <img src="photos/lightBulb.jpg" class="img-responsive">
                 </div>
                 <div class="col-xs-12 col-sm-8 col-md-7" id="r2c1">
-                    <h2>SKILLS</h2>
-                    <div class="col-xs-6 col-md-3" id="skill1">
-                    <p id="python">Python<div id="pythonOutline">
+                    <h2>SKILLS<a><div id="skillArrow"></div></a></h2>
+                    <div class="col-xs-12 col-md-3" id="skill1">
+                    <p class="skillText">Python<div class="skillOutline">
                         <div id="pythonBar"></div></div></p>
-                    <p id="c">C<div id="cOutline">
+                    <p class="skillText">C<div class="skillOutline">
                         <div id="cBar"></div></div></p>
-                    <p id="arduino">Arduino<div id="arduinoOutline">
+                    <p class="skillText">Arduino<div class="skillOutline">
                         <div id="arduinoBar"></div></div></p>
-                    <p id="sql">SQL<div id="sqlOutline">
+                    <p class="skillText">SQL<div class="skillOutline">
                         <div id="sqlBar"></div></div></p>
                     </div>
-                    <div class="col-xs-6 col-md-3" id="skill2">
-                    <p id="htmlcss">HTML & CSS<div id="htmlcssOutline">
+                    <div class="col-xs-12 col-md-3" id="skill2">
+                    <p class="skillText">HTML & CSS<div class="skillOutline">
                         <div id="htmlcssBar"></div></div></p>
-                    <p id="js">Javascript (+ jQuery & Bootstrap)<div id="jsOutline">
+                    <p class="skillText">Javascript (+ jQuery & Bootstrap)<div class="skillOutline">
                         <div id="jsBar"></div></div></p>
-                    <p id="adobes">Adobe Illustrator & Adobe Lightroom<div id="adobesOutline">
+                    <p class="skillText">Adobe Illustrator & Adobe Lightroom<div class="skillOutline">
                         <div id="adobesBar"></div></div></p>
-                    <p id="learn">Willingness to Learn <b>;)</b><div id="learnOutline">
+                    <p class="skillText">Willingness to Learn <b>;)</b><div class="skillOutline">
                         <div id="learnBar"></div></div></p>
                     </div>
                 </div>
             </div>
             <div class="row" id="row3">
-                <div class="col-xs-6 col-sm-6 col-md-6 col-md-offset-1" id="r3c1">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-md-offset-1" id="r3c1">
                     <h2>Résumé</h2>
                     <p>Click the document on the right to download a copy of my résumé!</p>
                     
