@@ -28,6 +28,12 @@
               src: url("fonts/Raleway-Bold.ttf");
 }
 
+
+
+/*************** Mobiles ******************/
+
+@media only screen and (max-width: 768px)  {
+
 header {
             position: fixed;
             top: 0px;
@@ -41,7 +47,7 @@ header h1 {
             padding-left: 10%;
             font-family: moon;
             font-size: 300%;
-            width: 30%;
+            width: 50%;
 }
 header ul {
             position: fixed;
@@ -316,3 +322,652 @@ section {
             color: rgba(236, 240, 240, 1.0);;
             margin: 0px 15px;
 }
+}
+
+/**************** Tablets ****************/
+
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+header {
+            position: fixed;
+            top: 0px;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.95);
+            z-index: 3;
+}
+header h1 {
+            position: relative;
+            top: 20%;
+            padding-left: 5%;
+            font-family: moon;
+            font-size: 300%;
+            width: 50%;
+}
+header ul {
+            position: fixed;
+            right: 0px;
+            top: 0px;
+            padding-right: 5%;
+            list-style-type: none;
+            text-decoration: none;
+            font-family: moon;
+            font-size: 140%;
+            display: none;
+            z-index: 5;
+}
+header li {
+}
+header a { color: rgba(0, 0, 0, 0.5); text-decoration: none; }
+header a:hover { color: rgba(0, 0, 0, 1.0); text-decoration: none; }
+.navBox {
+                position: fixed;
+                top: 0px;
+                right: 0px;
+                background-color: rgba(255, 102, 102, 0.7);
+                z-index: 4;
+}    
+.arrow {
+                position: fixed;
+                width: 0px; 
+                height: 0px;
+                right: 0px;
+                opacity: 0.3;
+                border-left: 25px solid transparent; 
+                border-top: 25px solid transparent; 
+                border-right: 25px solid black; 
+                border-bottom: 25px solid transparent;
+                z-index: 5;
+}
+.navBox:hover { cursor: pointer; }
+.arrow:hover { cursor: pointer; opacity: 0.7;}
+
+section {
+            position: absolute;
+            background-color: rgba(236, 240, 240, 1.0);
+}
+
+#row1 {
+            background-color: rgba(17,27,41,1.0);
+}
+#r1c1 {
+            
+            width: 50%;
+            position: relative;
+            left: 0px;
+    
+}
+#r1c1 h2 {
+            color: #FF6666;
+            padding-left: 10%;
+            font-family: ralewayBold;
+}
+#r1c1 p {
+            color: #ecf0f1;
+            width: 80%;
+            margin-left: 10%;
+            font-size: 1.5vw;
+            font-family: raleway;
+            position: relative;
+            
+}
+#row1 img { 
+            left: 0px;
+            z-index: 1; 
+            position: relative;
+            display: block;
+}
+
+#row2 { 
+    color: rgba(44, 62, 80,1.0); 
+    background-color: #FF6666;
+}
+#row2 img { 
+    position: relative;
+    display: block;
+    top: 50%;
+}
+#lightbulb_bg {
+            position: absolute;
+            
+}
+#r2c1 {
+            background-color: #FFFFFF;
+
+}
+#r2c1 h2 {
+            font-family: ralewayBold;
+            
+            position: relative;
+            text-align: center;
+            
+}
+#skillArrow {
+            position: relative;
+            width: 0px; 
+            height: 0px;
+            left: 46%;
+            opacity: 0.3;
+            border-left: 25px solid transparent; 
+            border-top: 25px solid black; 
+            border-right: 25px solid transparent; 
+            border-bottom: 25px solid transparent;
+            padding-bottom: -25px;
+            display: none;
+}
+#skillArrow:hover {
+            opacity: 0.8;
+            cursor: pointer;
+}
+#r2c1 p {
+            padding-bottom: 2%;
+            font-family: raleway;
+            padding-left: 10%;
+            display: block;
+}
+.skillOutline {
+            margin-top: -2%;
+            position: relative;
+            width: 80%;
+            height: 20px;
+            margin-left: 10%;
+            border-color: #FF6666;
+            border-width: 2px;
+            border-radius: 20px;
+            border-style: solid;
+            display: block;
+}
+#pythonBar {
+                position: absolute;
+                width: 75%;
+                left: 1%;
+                height: 80%;
+                top: 10%;
+                border-radius: 20px;
+                background-color: #FF6666;
+                animation: pyBar;
+                animation-duration: 4s;
+}
+@keyframes pyBar {
+    from { width: 1%; }
+    to { width: 75%; }
+}
+#cBar {
+                position: absolute;
+                width: 55%;
+                left: 1%;
+                height: 80%;
+                top: 10%;
+                border-radius: 20px;
+                background-color: #FF6666;
+                animation: cBar;
+                animation-duration: 4s;
+}
+@keyframes cBar {
+    from { width: 1%; }
+    to { width: 55%; }
+}
+#arduinoBar {
+                position: absolute;
+                width: 50%;
+                left: 1%;
+                height: 80%;
+                top: 10%;
+                border-radius: 20px;
+                background-color: #FF6666;
+                animation: arduinoBar;
+                animation-duration: 4s;
+}
+@keyframes arduinoBar {
+    from { width: 1%; }
+    to { width: 50%; }
+}
+#sqlBar {
+                position: absolute;
+                width: 55%;
+                left: 1%;
+                height: 80%;
+                top: 10%;
+                border-radius: 20px;
+                background-color: #FF6666;
+                animation: sqlBar;
+                animation-duration: 4s;
+}
+@keyframes sqlBar {
+    from { width: 1%; }
+    to { width: 55%; }
+}
+#htmlcssBar {
+                position: absolute;
+                width: 90%;
+                left: 1%;
+                height: 80%;
+                top: 10%;
+                border-radius: 20px;
+                background-color: #FF6666;
+                animation: htmlcssBar;
+                animation-duration: 4s;
+}
+@keyframes htmlcssBar {
+    from { width: 1%; }
+    to { width: 90%; }
+}
+#jsBar {
+                position: absolute;
+                width: 70%;
+                left: 1%;
+                height: 80%;
+                top: 10%;
+                border-radius: 20px;
+                background-color: #FF6666;
+                animation: jsBar;
+                animation-duration: 4s;
+}
+@keyframes jsBar {
+    from { width: 1%; }
+    to { width: 70%; }
+}
+#adobesBar {
+                position: absolute;
+                width: 60%;
+                left: 1%;
+                height: 80%;
+                top: 10%;
+                border-radius: 20px;
+                background-color: #FF6666;
+                animation: adobesBar;
+                animation-duration: 4s;
+}
+@keyframes adobesBar {
+    from { width: 1%; }
+    to { width: 60%; }
+}
+#learnBar {
+                position: absolute;
+                width: 98%;
+                left: 1%;
+                height: 80%;
+                top: 10%;
+                border-radius: 20px;
+                background-color: #FF6666;
+                animation: learnBar;
+                animation-duration: 4s;
+}
+@keyframes learnBar {
+    from { width: 1%; }
+    to { width: 98%; }
+}
+
+#row3 {
+            background-color: rgba(17,27,41,1.0);
+}
+#r3c1 h2 {
+            font-family: ralewayBold;
+            color: #FF6666;
+            text-align: center;
+            padding-top: 10%;
+}
+#r3c1 p {
+            font-family: raleway;
+            color: #ecf0f1;
+            width: 100%;
+            
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.4em;
+}
+#row3 img { display: block; }
+
+
+#row4 {
+            background-color: #2E2E2E;
+}
+#contact {
+            text-align: center;
+            padding: 20px 0px;
+}
+#contact h2 {
+            color: #FF6666;
+            font-family: ralewayBold;
+}
+#contact p {
+            color: rgba(236, 240, 240, 1.0);
+            text-decoration: none;
+            font-size: 1.2em;
+}
+#contact a {
+            color: rgba(236, 240, 240, 1.0);;
+            margin: 0px 15px;
+}
+
+    
+}
+
+/**************Desktop*************/
+
+@media only screen and (min-width: 992px) {
+
+header {
+            position: fixed;
+            top: 0px;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.95);
+            z-index: 3;
+}
+header h1 {
+            position: relative;
+            top: 20%;
+            padding-left: 5%;
+            font-family: moon;
+            font-size: 300%;
+            width: 50%;
+}
+header ul {
+            position: fixed;
+            right: 0px;
+            top: 45px;
+            padding-right: 5%;
+            list-style-type: none;
+            text-decoration: none;
+            font-family: moon;
+            font-size: 140%;
+            display: block;
+            z-index: 5;
+}
+header li {
+            display: inline;
+            margin: 0px 10px;
+}
+header a { color: rgba(0, 0, 0, 0.5); text-decoration: none; }
+header a:hover { color: rgba(0, 0, 0, 1.0); text-decoration: none; }
+.navBox {
+                position: fixed;
+                top: 0px;
+                right: 0px;
+                background-color: rgba(255, 102, 102, 0.7);
+                z-index: 4;
+                display: none;
+}    
+.arrow {
+                position: fixed;
+                width: 0px; 
+                height: 0px;
+                right: 0px;
+                opacity: 0.3;
+                border-left: 25px solid transparent; 
+                border-top: 25px solid transparent; 
+                border-right: 25px solid black; 
+                border-bottom: 25px solid transparent;
+                z-index: 5;
+}
+.navBox:hover { cursor: pointer; }
+.arrow:hover { cursor: pointer; opacity: 0.7;}
+
+section {
+            position: absolute;
+            background-color: rgba(236, 240, 240, 1.0);
+            width: 100%;
+}
+
+#row1 {
+                position: relative;   
+                top: 20%;
+                background-color: 
+}   
+#r1c1 {
+            
+            width: 50%;
+            position: relative;
+            left: 0px;
+            background-color: rgba(17,27,41,1.0);
+    
+}
+#r1c1 h2 {
+            color: #FF6666;
+            padding-left: 5%;
+            font-family: ralewayBold;
+}
+#r1c1 p {
+            color: #ecf0f1;
+            width: 80%;
+            height: 70%;
+            padding-top: 5%;
+            padding-left: 5%;
+            font-size: 1.1vw;
+            font-family: raleway;
+            position: relative;
+            
+}
+#row1 img { 
+            left: 0px;
+            z-index: 1; 
+            position: relative;
+            display: block;
+            margin-left: -30px;
+}
+
+#row2 { 
+    color: rgba(44, 62, 80, 1.0); 
+    
+}
+#row2 img { 
+    position: relative;
+    display: block;
+    top: 0%;
+}
+#lightbulb_bg {
+            position: relative;
+            left: -5%;
+            background-color: #FF6666;
+            width: 110%;
+            
+}
+#r2c1 {
+            background-color: #FFFFFF;
+}
+#r2c1 h2 {
+            font-family: ralewayBold;
+            
+            position: relative;
+            text-align: center;
+            
+}
+#r2c1 p {
+            padding-bottom: 2%;
+            font-family: raleway;
+            padding-left: 10%;
+            display: block;
+}
+#skill1 {
+            position: relative;
+            width: 50%;
+}
+#skill2 {
+            position: relative;
+            width: 50%;
+            
+}
+.skillOutline {
+            margin-top: -2%;
+            position: relative;
+            width: 80%;
+            height: 20px;
+            margin-left: 10%;
+            border-color: #FF6666;
+            border-width: 2px;
+            border-radius: 20px;
+            border-style: solid;
+            display: block;
+}
+#pythonBar {
+                position: absolute;
+                width: 75%;
+                left: 1%;
+                height: 80%;
+                top: 10%;
+                border-radius: 20px;
+                background-color: #FF6666;
+                animation: pyBar;
+                animation-duration: 4s;
+}
+@keyframes pyBar {
+    from { width: 1%; }
+    to { width: 75%; }
+}
+#cBar {
+                position: absolute;
+                width: 55%;
+                left: 1%;
+                height: 80%;
+                top: 10%;
+                border-radius: 20px;
+                background-color: #FF6666;
+                animation: cBar;
+                animation-duration: 4s;
+}
+@keyframes cBar {
+    from { width: 1%; }
+    to { width: 55%; }
+}
+#arduinoBar {
+                position: absolute;
+                width: 50%;
+                left: 1%;
+                height: 80%;
+                top: 10%;
+                border-radius: 20px;
+                background-color: #FF6666;
+                animation: arduinoBar;
+                animation-duration: 4s;
+}
+@keyframes arduinoBar {
+    from { width: 1%; }
+    to { width: 50%; }
+}
+#sqlBar {
+                position: absolute;
+                width: 55%;
+                left: 1%;
+                height: 80%;
+                top: 10%;
+                border-radius: 20px;
+                background-color: #FF6666;
+                animation: sqlBar;
+                animation-duration: 4s;
+}
+@keyframes sqlBar {
+    from { width: 1%; }
+    to { width: 55%; }
+}
+#htmlcssBar {
+                position: absolute;
+                width: 90%;
+                left: 1%;
+                height: 80%;
+                top: 10%;
+                border-radius: 20px;
+                background-color: #FF6666;
+                animation: htmlcssBar;
+                animation-duration: 4s;
+}
+@keyframes htmlcssBar {
+    from { width: 1%; }
+    to { width: 90%; }
+}
+#jsBar {
+                position: absolute;
+                width: 70%;
+                left: 1%;
+                height: 80%;
+                top: 10%;
+                border-radius: 20px;
+                background-color: #FF6666;
+                animation: jsBar;
+                animation-duration: 4s;
+}
+@keyframes jsBar {
+    from { width: 1%; }
+    to { width: 70%; }
+}
+#adobesBar {
+                position: absolute;
+                width: 60%;
+                left: 1%;
+                height: 80%;
+                top: 10%;
+                border-radius: 20px;
+                background-color: #FF6666;
+                animation: adobesBar;
+                animation-duration: 4s;
+}
+@keyframes adobesBar {
+    from { width: 1%; }
+    to { width: 60%; }
+}
+#learnBar {
+                position: absolute;
+                width: 98%;
+                left: 1%;
+                height: 80%;
+                top: 10%;
+                border-radius: 20px;
+                background-color: #FF6666;
+                animation: learnBar;
+                animation-duration: 4s;
+}
+@keyframes learnBar {
+    from { width: 1%; }
+    to { width: 98%; }
+}
+
+#row3 {
+            
+}
+#r3c1 {
+            background-color: rgba(17,27,41,1.0); 
+            position: relative;
+            
+}
+#r3c1 h2 {
+            font-family: ralewayBold;
+            color: #FF6666;
+            text-align: center;
+            padding-top: 7%;
+}
+#r3c1 p {
+            font-family: raleway;
+            color: #ecf0f1;
+            width: 100%;
+            
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.4em;
+}
+#row3 img { 
+    display: block;
+    position: absolute;
+}
+
+
+#row4 {
+            background-color: #2E2E2E;
+}
+#contact {
+            text-align: center;
+            padding: 20px 0px;
+}
+#contact h2 {
+            color: #FF6666;
+            font-family: ralewayBold;
+}
+#contact p {
+            color: rgba(236, 240, 240, 1.0);
+            text-decoration: none;
+            font-size: 1.2em;
+}
+#contact a {
+            color: rgba(236, 240, 240, 1.0);;
+            margin: 0px 15px;
+}
+
+    
+}
+ 
