@@ -1,52 +1,25 @@
-$(document).ready(function() {projectsFunction("docReady")});
-$(window).on('resize', function() {projectsFunction("docResize")});
+$(document).ready(function() {homeFunction("docReady")});
+$(window).on('resize', function() {homeFunction("docResize")});
 
 
-function projectsFunction(status) {
-    if ($(window).innerWidth() < 500) {
-            $(".middle-bar h1").text("D.Hu");   
-        }
-    else if ($(window).innerWidth() < 992) {
-            $(".middle-bar h1").text("Danielle Hu");
-        }
-
-    /*if ($(window).innerWidth() < 992) {
-            $(".about").html("<img class='img-responsive' src='photos/about.gif'>");
-            $(".projects").html("<img class='img-responsive' src='pages/projects/photos/projects.jpg'>");
-            $(".experiences").html("<img class='img-responsive' src='photos/about.gif'>");
-            $(".interests").html("<img class='img-responsive' src='photos/interests.jpg'>");
-        }
-    else {
-            $(".about").html("");
-            $(".projects").html("");
-            $(".experiences").html("");
-            $(".interests").html("");   
-    }*/
-    
-    if ($(window).innerWidth() > 992) {
-        $("img").css({
+function homeFunction(status) {    
+    if ($(window).innerWidth() > 1142) {
+        $(".bg-img").css({
             width: $(window).innerWidth()});
-        $("section").css("height", $(window).innerHeight());
+    }
+    else if ($(window).innerWidth() < 1142) {
+        $(".bg-img").css('width', 1142);
+    }
+    if ($(window).innerWidth() < 768) {
+        $("section h1").text("D.Hu");
+        $("section p").text("");
+    }
+    else {
+        $("section h1").text("Danielle Hu");
+        $("section p").text("welcome to the personal website of");
     }
     
     //Action commands
     if (status == "docReady") {
-        //Intro animations (initial text)
-        if ($(window).innerWidth() > 992) {
-            var introText = document.getElementById("middle-bar-text");
-            setTimeout(function() { introText.innerHTML = "D.Hu"; }, 2100);
-            setTimeout(function() { introText.innerHTML = "Danielle Hu"; }, 4300);
-            //Intro animations continued (fade-in images)
-            /*$(".about").delay(5500).fadeIn(500);
-            $(".projects").delay(6000).fadeIn(500);
-            $(".experiences").delay(6500).fadeIn(500);
-            $(".interests").delay(7000).fadeIn(500);*/
-        }
-        else if ($(window).innerWidth() < 500) {
-            $(".middle-bar h1").text("D.Hu");   
-        }
-        else {
-            $(".middle-bar h1").text("Danielle Hu");
-        }
     }
 }

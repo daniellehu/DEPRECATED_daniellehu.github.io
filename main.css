@@ -1,146 +1,277 @@
 html, body {
 margin:0;
 padding:0;
-background-color: rgba(110,232,174,0.7);
+overflow: hidden;
 }
 @font-face {
         font-family: "adamCG";
         src: url("fonts/ADAM.CG%20PRO.otf");
 }
+@font-face {
+        font-family: "mohave";
+        src: url("fonts/Mohave-Bold.otf");
+}
+@font-face {
+        font-family: "raleway";
+        src: url("fonts/Raleway-ExtraBold.ttf");
+}
+@font-face {
+        font-family: "raleway-small";
+        src: url("fonts/Raleway-SemiBold.ttf");
+}
 
 /*************** Mobiles ******************/
-
-@media only screen and (max-width: 992px)  {
-.middle-bar {
-    text-align: center;
-    font-family: adamCG;
-    position: relative;
-    background-color: rgba(60,60,60,1);
-    height: 140px;
+@media only screen and (max-width: 768px)  {
+#bg {
+    background-color: rgba(86, 101, 115, 0.85);
+    height: 100%;
+    width: 100%;
+    position: fixed;
 }
-#middle-bar-text {
-    color: white;
-    border-width: 5px;
-    border-style: solid;
-    font-size: 2.5em;
+.bg-img {
+    position: fixed;
+    width: 100%;
+    z-index: -1;
+}
+section {
     position: absolute;
-    padding: 5px;
-    left: 30%;
-    right: 30%;
-    z-index: 1;
+    top: 0px;
+    width: 100%;
 }
-    
+section h1 {
+    top: 10%;
+    color: #E8EAE9;
+    text-align: center;
+    font-family: mohave;
+    font-size: 10em;
+}
+.boxes {
+    top: 45%;
+    width: 100%;
+}
+.buttons {
+    font-size: 2em;
+    padding: 20px 30px;
+    color: #D0E9DD;
+    display: block;
+    border-color: #D0E9DD;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "raleway-small";
+    text-decoration: none;
+}
+.buttons:hover {
+    display: block;
+    font-size: 2em;
+    color: rgba(86, 101, 115,1.0);
+    padding: 20px 30px;
+    border-color: #D0E9DD;
+    background-color: #D0E9DD;
+    border-style: solid;
+    font-family: "raleway-small";
+    text-decoration: none;
+}
+.buttons:active {
+    display: block;
+    font-size: 2em;
+    padding: 20px 30px;
+    color: rgba(86, 101, 115,1.0);
+    border-color: #D0E9DD;
+    background-color: #D0E9DD;
+    opacity: 0.9;
+    border-style: solid;
+    font-family: "raleway-small";
+    text-decoration: none;
+}
+.buttons:active {
+    color: #D0E9DD;
+    padding: 20px 30px;
+    border-color: #D0E9DD;
+    background-color: #D0E9DD;
+    opacity: 0.9;
+    border-style: solid;
+    font-family: "raleway-small";
+    text-decoration: none;
+}
+}
+
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+#bg {
+    background-color: rgba(86, 101, 115,0.85);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+.bg-img {
+    position: fixed;
+    width: 100%;
+    z-index: -1;
+}
+section {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+section h1 {
+    position: fixed;
+    left: 15%;
+    top: 25%;
+    color: #E8EAE9;
+    text-align: right;
+    font-family: mohave;
+    font-size: 15vw;
+}
+section p {
+    position: fixed;
+    left: 15%;
+    top: 25%;
+    color: #D0E9DD;
+    font-family: raleway;
+    font-size: 3vw;
+}
+.boxes {
+    position: fixed;
+    top: 55%;
+    left: 15%;
+    width: 40em;
+}
+.buttons {
+    display: block;
+    font-size: 2em;
+    margin: 10px 0px;
+    color: #D0E9DD;
+    padding-left: 10px;
+    border-color: #D0E9DD;
+    border-style: solid;
+    font-family: "raleway-small";
+    text-decoration: none;
+}
+.buttons:hover {
+    display: block;
+    font-size: 2em;
+    margin: 10px 0px;
+    color: rgba(86, 101, 115,1.0);
+    padding-left: 10px;
+    border-color: #D0E9DD;
+    background-color: #D0E9DD;
+    border-style: solid;
+    font-family: "raleway-small";
+    text-decoration: none;
+}
+.buttons:active {
+    display: block;
+    font-size: 2em;
+    margin: 10px 0px;
+    color: rgba(86, 101, 115,1.0);
+    padding-left: 10px;
+    border-color: #D0E9DD;
+    background-color: #D0E9DD;
+    opacity: 0.9;
+    border-style: solid;
+    font-family: "raleway-small";
+    text-decoration: none;
+}
+.buttons:active {
+    color: #D0E9DD;
+    padding-left: 10px;
+    border-color: #D0E9DD;
+    background-color: #D0E9DD;
+    opacity: 0.9;
+    border-style: solid;
+    font-family: "raleway-small";
+    text-decoration: none;
+}
+  
 }
 
 
 
 /*************** Desktop ******************/
 @media only screen and (min-width: 992px) {
-
-.middle-bar {
-    border-width: 5px;
-    border-style: solid;
-    position: absolute;
-    top: 42.5%;
-    left: 41%;
-    font-family: adamCG;
-    width: 18em;
-    animation: intro;
-    animation-duration: 5s;
-    animation-timing-function: ease;
-    text-align: center;
-    color: white;
-    background-color: rgba(110,232,174,0.7);
-    z-index: 1;
-}
-#middle-bar-text {
-    color: rgba(0,0,0,1.0);
-    font-size: 3em;
-    padding: 0px;
-    margin: 5px;
-    animation: intro-fade;
-    animation-duration: 5s;
-    animation-timing-function: ease;
-    color: white;
-    cursor: default;
-}
-@keyframes intro {
-    0% { width: 0em; }
-    20% { width: 10em; }
-    40% { width: 10em; }
-    43% { width: 0em; }
-    63% { width: 12em; }
-    83% { width: 12em; }
-    86% { width: 0em; }
-    100% { width: 18em; }
-}
-@keyframes intro-fade {
-    0% { color: rgba(0,0,0,0.0); }
-    6% { color: rgba(0,0,0,0.0); }
-    26% { color: rgba(255,255,255,1.0); }
-    40% { color: rgba(255,255,255,1.0); }
-    40.5% { color: rgba(0,0,0,0.0); }
-    48% { color: rgba(0,0,0,0); }
-    81% { color: rgba(255,255,255,1.0); }
-    81.3% { color: rgba(0,0,0,0.0); }
-    92% { color: rgba(0,0,0,0); }
-    100% { color: rgba(255,255,255,1.0); }
-}
-
-.about {
-    position: absolute;
-    height: 25%;
-    width: 25%;
-    top: 30%;
-    left: 25%;
-    font-size: 12px;
-}
-
-.projects {
-    position: absolute;
-    height: 25%;
-    width: 25%;
-    left: 50%;
-    top: 30%;
-}
-
-.experiences {
-    position: absolute;
-    height: 25%;
-    width: 25%;
-    top: 55%;
-    left: 25%;
-}
-
-.interests {
-    position: absolute;
-    height: 25%;
-    width: 25%;
-    left: 50%;
-    top: 55%;
-}
-
-header {
-    position: relative;
-    top: 50px;
-}
-    
-img {
+#bg {
+    background-color: rgba(86, 101, 115,0.85);
+    height: 100%;
+    width: 100%;
     position: fixed;
+}
+.bg-img {
+    position: fixed;
+    width: 100%;
     z-index: -1;
 }
 section {
-    z-index: 0;
-    background-color: rgba(110,232,174,0.4);
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+section h1 {
+    position: fixed;
+    left: 30%;
+    top: 25%;
+    color: #E8EAE9;
+    text-align: right;
+    font-family: mohave;
+    font-size: 10em;
+}
+section p {
+    position: fixed;
+    left: 30%;
+    top: 25%;
+    color: #D0E9DD;
+    font-family: raleway;
+    font-size: 2em;
+}
+.boxes {
+    position: fixed;
+    top: 55%;
+    left: 30%;
+    width: 40em;
+}
+.buttons {
+    display: block;
+    font-size: 2em;
+    margin: 10px 0px;
+    color: #D0E9DD;
+    padding-left: 10px;
+    border-color: #D0E9DD;
+    border-style: solid;
+    font-family: "raleway-small";
+    text-decoration: none;
+}
+.buttons:hover {
+    display: block;
+    font-size: 2em;
+    margin: 10px 0px;
+    color: rgba(86, 101, 115,1.0);
+    padding-left: 10px;
+    border-color: #D0E9DD;
+    background-color: #D0E9DD;
+    border-style: solid;
+    font-family: "raleway-small";
+    text-decoration: none;
+}
+.buttons:active {
+    display: block;
+    font-size: 2em;
+    margin: 10px 0px;
+    color: rgba(86, 101, 115,1.0);
+    padding-left: 10px;
+    border-color: #D0E9DD;
+    background-color: #D0E9DD;
+    opacity: 0.9;
+    border-style: solid;
+    font-family: "raleway-small";
+    text-decoration: none;
+}
+.buttons:active {
+    color: #D0E9DD;
+    padding-left: 10px;
+    border-color: #D0E9DD;
+    background-color: #D0E9DD;
+    opacity: 0.9;
+    border-style: solid;
+    font-family: "raleway-small";
+    text-decoration: none;
 }
     
 }
-
-/*
-
-Issues for future:
-- Image resizing, does it really help with speed (bg/img?)?
-- animation repeat when resize
-
-
-*/
