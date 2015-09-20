@@ -1,8 +1,5 @@
-$(document).ready(function() {aboutFunction("docReady")});
-$(window).on('resize', function() {aboutFunction("docResize")});
-
-
 function aboutFunction(status) {
+    
     if ($(window).innerHeight()*0.15 < 90) {
         $("header").css("height", 80);
         $("section").css("top", 80); }
@@ -90,3 +87,6 @@ function aboutFunction(status) {
         });
     }
 }
+
+$(document).ready(function() {aboutFunction("docReady")});
+$(window).on('resize', function() {aboutFunction("docResize")});

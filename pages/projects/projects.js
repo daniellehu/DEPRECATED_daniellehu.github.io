@@ -1,6 +1,3 @@
-$(document).ready(function() {projectsFunction("docReady")});
-$(window).on('resize', function() {projectsFunction("docResize")});
-
 function positionProjects() {
        //positioning projects
     $("#one").css("top", $(".intro").css("height"));
@@ -26,6 +23,8 @@ function projectsFunction(status) {
     else {
         $(".project").css("top", "auto");   
     }
+    
+    console.log("JS running fine");
  
     
     //Action commands
@@ -64,3 +63,6 @@ function projectsFunction(status) {
         });
     }
 }
+
+$(document).ready(function() {projectsFunction("docReady")});
+$(window).on('resize', function() {projectsFunction("docResize")});
