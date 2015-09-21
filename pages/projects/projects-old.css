@@ -1,0 +1,331 @@
+@font-face {
+              font-family: "galano";
+              src: url("../../fonts/Galano%20Grotesque%20Semi%20Bold.otf");
+}
+
+@font-face {
+              font-family: "galanothin";
+              src: url("../../fonts/Galano%20Grotesque.otf");
+}
+
+@font-face {
+              font-family: "maxwell";
+              src: url("../../fonts/MAXWELL%20REGULAR.ttf");
+}
+
+@font-face {
+              font-family: "scala";
+              src: url("../../fonts/Scala.otf");
+}
+
+@font-face {
+              font-family: "raleway";
+              src: url("../../fonts/Raleway-Medium.ttf");
+}
+
+@font-face {
+              font-family: "ralewayBold";
+              src: url("../../fonts/Raleway-Bold.ttf");
+}
+
+/*************** Mobiles ******************/
+
+@media only screen and (max-width: 992px)  {
+body, html {
+    position: relative;
+}
+header {
+    position: relative;
+    background-color: rgba(82, 82, 82,1.0);
+    color: #F2F2F2;
+}
+header h1 {
+    position: relative;
+    float: left;
+    font-family: galano;
+    margin-left: 10px;
+}
+.navigation-button {
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    background-color: rgba(82, 82, 82,1.0);
+    right: 0px;
+    z-index: 2;
+    -webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all  0.3s ease;
+}
+.navigation-button-on {
+    position: absolute;
+    width: 220px;
+    height: 100%;
+    background-color: rgba(82, 82, 82,1.0);
+    right: 0px;
+    z-index: 2;
+    -webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all  0.3s ease;   
+}
+.box-shadow-menu:before {
+  content: "";
+  position: absolute;
+  left: 0.8em;
+  top: 1.8em;
+  width: 2em;
+  height: 0.2em;
+  background: #F2F2F2;
+  box-shadow: 
+    0 0.95em 0 0 #F2F2F2,
+    0 0.5em 0 0 #F2F2F2
+}
+.navigation-button:hover {
+    background-color: rgba(182, 182, 182, 0.8);
+    cursor: pointer;
+}
+nav {
+    overflow-x: hidden;
+    width: 220px;
+    font-family: galanothin;
+    font-size: 18px;
+    background-color: rgba(82, 82, 82,1.0);
+    z-index: 1;  
+}
+nav a {
+    display: block;
+    font-size: 1.50em;
+    text-decoration: none;
+    color: white;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+nav a:link {
+    display: block;
+    font-size: 1.50em;
+    text-decoration: none;
+    color: white;
+}
+nav a:hover {
+    display: block;
+    font-size: 1.50em;
+    text-decoration: none;
+    color: rgba(255,255,255,0.5);
+    background-color: rgba(182, 182, 182, 1.0);
+}
+nav a:visited {
+    display: block;
+    font-size: 1.50em;
+    text-decoration: none;
+    color: white;
+}
+nav a:active {
+    display: block;
+    font-size: 1.50em;
+    text-decoration: none;
+    background-color: rgba(182, 182, 182, 0.5);
+}
+.slide-off, .slide-on {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all  0.3s ease;
+}
+.slide-off {
+    position: fixed;
+    right: -220px;
+}
+.slide-on {
+	position: relative;
+    right: 0px;
+    float: right;
+}
+section {
+    position: absolute;
+    right: 0px;
+    -webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all  0.3s ease;
+    background-color: #595959;
+}
+.section-slide {
+    position: absolute;
+    right: 170px;
+    -webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all  0.3s ease;
+    opacity: 0.3;
+}
+.intro {
+    position: relative;
+    width: auto;
+}
+.project {
+    position: relative;
+    margin: 0px 0px;
+    background-color: #595959;
+}
+.project-content {
+    position: relative;
+    padding: 0px 25px;
+    color: #F2F2F2;
+    display: none;
+}
+.project img {
+    position: relative;
+    opacity: 0.8;
+}
+.project img:hover {
+    position: relative;
+    opacity: 1.0;
+}
+.project-content h2 {
+    font-family: galano;
+    text-align: center;
+    font-size: 10vw;
+}
+.project-content h3 {
+    font-family: galanothin;
+    font-size: 1.4em;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.project-content p {
+    font-family: scala;
+    font-size: 1.1em;
+    padding-bottom: 50px;
+}
+.project-content a {
+    text-decoration: none;
+    color: #BFAE8E;
+}
+.project-content a:hover {
+    text-decoration: none;
+    color: #BFAE8E;
+    opacity: 0.8;
+}
+}
+/*************** Desktop ******************/
+@media only screen and (min-width: 992px)  {
+body, html {
+    padding: 0px;
+    margin: 0px;
+}
+header {
+    position: absolute;
+    background-color: rgba(82, 82, 82,0.1);
+    color: #F2F2F2;
+    z-index: 1;
+}
+header h1 {
+    position: relative;
+    float: left;
+    font-family: galano;
+    margin-left: 50px;
+}
+nav {
+    position: absolute;
+    right: 50px;
+    top: 20px;
+    font-family: galanoThin;
+    font-size: 1.8em;
+    z-index: 1;
+}
+nav a {
+    padding: 20px;   
+    color: white;
+    text-decoration: none;
+}
+nav a:link {
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    opacity: 1.0;
+}
+nav a:hover {
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    opacity: 0.7;
+}
+nav a:visited {
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    opacity: 1.0;
+}
+nav a:active {
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    opacity: 0.5;
+}
+#nav-one {
+    animation-name: navigation-fade;
+    animation-duration: 2s;
+}
+#nav-two {
+    animation-name: navigation-fade;
+    animation-duration: 3s;
+}
+#nav-three {
+    animation-name: navigation-fade;
+    animation-duration: 4s;
+}
+#nav-four {
+    animation-name: navigation-fade;
+    animation-duration: 5s;
+}
+@keyframes navigation-fade {
+    from { opacity: 0.0; }
+    to { opacity: 1.0; }
+}
+section { position: relative; }
+.intro {
+    position: absolute;
+    top: 0px;
+    z-index: 0;
+}
+.project {
+    position: relative;
+    margin: 2px;
+    padding: 0px;
+    float: left;
+    opacity: 0.8;
+}
+.project:hover {
+    opacity: 1.0;   
+}
+.project-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(89, 89, 89, 1.0);
+    color: white;
+    padding: 40px;
+    margin: 2px 0px;
+}
+.project-content a {
+    text-decoration: none;
+    color: #BFAE8E;
+}
+.project-content a:hover {
+    text-decoration: none;
+    color: #BFAE8E;
+    opacity: 0.8;
+}
+#one {
+    width: 49%;
+}
+#two {
+    width: 50.21%;
+    right: 0px;
+}
+#three {
+    width: 34.2%;
+}
+#four {
+    width: 30.3%;
+}
+#five {
+    width: 34.3%;
+}
+}

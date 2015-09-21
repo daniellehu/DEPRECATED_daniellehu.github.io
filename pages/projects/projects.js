@@ -1,68 +1,35 @@
-function positionProjects() {
-       //positioning projects
-    $("#one").css("top", $(".intro").css("height"));
-    $("#two").css("top", parseInt($("#one").css("height"))+
-                 parseInt($("#one").css("top")));
-    $("#three").css("top", parseInt($("#two").css("height"))+
-                 parseInt($("#two").css("top")));
-}
+$(document).ready(function() {aboutFunction("docReady")});
+$(window).on('resize', function() {aboutFunction("docResize")});
 
-function projectsFunction(status) {
-    //Navigation Bar on mobile
-    $("nav").css("height", $(window).innerHeight());
-    if ($(window).innerWidth() < 365) {
-        $("header h1").text("D.Hu");    
+
+function aboutFunction(status) {    
+    
+    
+    if ($(window).innerWidth() < 992) {
+        $(".bg-img").css("width", "992px");
+        $("#bg h1").css("width", $(window).innerWidth());
+        $(".bottom-content").css("max-width", $(window).innerWidth());
+        $(".top-about").css("height", $(".bg-img").css("height"));
+        $("#bg").css("height", $(".bg-img").css("height"));
+        $("nav").css("height", $("section").css("height"));
     }
     else {
-        $("header h1").text("Danielle Hu");   
+        $(".bg-img").css("width", $(window).innerWidth());
+        $(".bottom-content").css("max-width", "100%");
+        $(".top-about").css("height", $(".bg-img").css("height"));
+        $("#bg").css("height", $(".bg-img").css("height"));
+        $("nav").css("height", $("section").css("height"));
     }
-    
-    if ($(window).innerWidth() > 992) {
-        $(".project").css("top", $(".intro").css("height"));
-    }
-    else {
-        $(".project").css("top", "auto");   
-    }
-    
-    console.log("JS running fine");
- 
     
     //Action commands
     if (status == "docReady") {
-        $("#navigation-button").click(function() {
-            $("nav").toggleClass("slide-on");
-            $("section").toggleClass("section-slide");
-            $("#navigation-button").toggleClass("navigation-button-on");
-            if ($("nav").attr("class") == "slide-off slide-on") {
-                $("body").css({
-                position: "fixed", 
-                overflow: "scroll",
-                width: "100%"
-            }); }
-            else {
-                $("body").css({
-                position: "static", 
-                overflow: "scroll",
-                width: "100%"
-            }); }
-        });
-        $("section").click(function() {
-            if ($("section").attr("class") == "section-slide") {
-                $("nav").addClass("slide-off").removeClass("slide-on");
-                $("#navigation-button").toggleClass("navigation-button-on");
-                $("section").removeClass("section-slide");
-                $("body").css({
-                position: "static", 
-                overflow: "scroll",
-                width: "100%"
-            });
-            }
-        });
-        $(".project").click(function() {
-            $(this).children(".project-content").slideToggle(300);
+        $("#nav-button").click(function() {
+            $(".nav-off").toggleClass("nav-on");
+            $("h2 a").toggleClass("header-on");
+            $(".fa-bars").toggleClass("i-on");
+            $(".section-elements").toggleClass("section-on");
+            $(".bottom-content").toggleClass("bottom-content-on");
         });
     }
+    
 }
-
-$(document).ready(function() {projectsFunction("docReady")});
-$(window).on('resize', function() {projectsFunction("docResize")});

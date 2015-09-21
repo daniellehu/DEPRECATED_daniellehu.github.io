@@ -3,60 +3,67 @@
     <head>      
         <title>Danielle Hu</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="projects.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0; maximum-scale=1.0; user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="projects.css">
+        <link rel="stylesheet" type="text/css" href="../font-awesome.min.css">
+        <link rel="shortcut icon" href="../../photos/tab-icon.gif">
     </head>
-    
     <body>
-        <header class="container-fluid">
-            <h1>DANIELLE HU</h1>
-            <div id="navigation-button" class="navigation-button box-shadow-menu"></div>
-            <div class="navigation-stretch"></div>
+        <header>
+            <h2><a href="../../index.html">D.HU</a></h2>
+            <i class="fa fa-bars" id="nav-button"></i>
+            <nav class="nav-off">
+                <h2>Menu</h2>
+                <a href="../about/about.html">About</a>
+                <a href="../experiences/experiences.html">Experiences</a>
+                <a href="../hobbies/hobbies.html">Interests</a>
+                <a class="icons icons-one" href="https://github.com/daniellehu"><i class="fa fa-github-square"></i></a><br>
+                <a class="icons icons-two" href="https://www.flickr.com/photos/daniellehu"><i class="fa fa-flickr"></i></a>
+                <a class="icons icons-three" href="https://instagram.com/danielle_hu/"><i class="fa fa-instagram"></i></a><br>
+                <a class="icons icons-four" href="www.linkedin.com/in/daniellehu"><i class="fa fa-linkedin"></i></a>
+                <h2>Contact</h2>
+                <p><span class="important">e-mail:</span><br> daniellh@<br>andrew.cmu.edu</p>
+                <p><span class="important">phone:</span> 727-741-7691</p>
+            </nav>
         </header>
-        <nav class="slide-off">
-            <a href="../about/about.html" id="nav-one">About</a>
-            <a style="color: #BFAE8E" id="nav-two">Projects</a>
-            <a href="../experiences/experiences.html" id="nav-three">Experience</a>
-            <a href="../hobbies/hobbies.html" id="nav-four">Interests</a>
-        </nav>
         <section>
-            <div class="intro"><img src="photos/projects.jpg" class="img-responsive"></div>
-            <div class="project" id="one">
-                <img src="photos/Ezzy.jpg" class="img-responsive">
-                
-                <div class="project-content">
+            <div class="top-about">
+                <div id="bg">
+                    <h1 class="section-elements">projects</h1>
+                </div>
+                <img class="bg-img" src="projects.jpg">
+                <!--Photo credit to my buddy, my pal, Janette Lau :) [that rhymed]
+                 https://www.flickr.com/photos/janettelau   
+                !-->
+            </div>
+            <div class="bottom-content">
+                <div class="project" style="margin-top: 0%">
                     <h2 class="project-title">Ezzy World</h2>
-                    <h3>November - December 2014</h3>
-                    <p>Ezzy World is a simple life-simulating game created
+                    <h3 class="project-date">November - December 2014</h3>
+                    <p class="project-description">Ezzy World is a simple life-simulating game created
                         with Python's TKinter and Adobe Illustrator. The project
                         was created for Carnegie Mellon University's <i>
                         Fundamentals of Programming</i> course (15-112).
                         Project source code can be found 
-                    <a href="https://github.com/daniellehu/Ezzy-World">here.</a>
-                    </p>
+                    <a href="https://github.com/daniellehu/Ezzy-World">here.</a></p>
+                    <img class="project-photos" src="photos/Ezzy.jpg">
                 </div>
-            </div>
-            <div class="project" id="two">
-                <img src="photos/Piairno.jpg" class="img-responsive">
-                <div class="project-content">
+                <div class="project project-right">
                     <h2 class="project-title">Piairno</h2>
-                    <h3>January 11, 2015 - January 17, 2015</h3>
-                    <p>The Piairno is a wearable set of gloves that produces
+                    <h3 class="project-date">January 11, 2015 - January 17, 2015</h3>
+                    <p class="project-description">The Piairno is a wearable set of gloves that produces
                     musical tones when played. With the aid of flex sensors
                     and Arduino Unos, the concept of an "Air Piano" came to life
                     during Carnegie Mellon University's Build 18 Week 2015
                     (a week long hackathon for engineers at CMU). A link to
                     the project's wiki page can be found
                     <a href="https://build18.ece.cmu.edu/wiki/index.php/Piairno">here.</a></p>
+                    <img class="project-photos" src="photos/Piairno.jpg">
                 </div>
-            </div>
-            <div class="project" id="three">
-                <img src="photos/Snaps.jpg" class="img-responsive">
-                <div class="project-content">
+                <div class="project">
                     <h2 class="project-title">Snaps v Humanity</h2>
-                    <h3>February 6 - 8, 2015</h3>
-                    <p>"Snaps v Humanity" combines the popular social application, Snapchat,
+                    <h3 class="project-date">February 6 - 8, 2015</h3>
+                    <p class="project-description">"Snaps v Humanity" combines the popular social application, Snapchat,
                     and the popular card game, Cards Against Humanity. For CMU's
                     TartanHacks 2015, our team built a platform for this mobile
                     game to be easily played by anyone who had access to Snapchat.
@@ -68,15 +75,14 @@
                     [note: our commit messages aren't very professional since we
                     worked in the same room during this project]. Also, you can download
                     our project's <a href="SnapsVsHumanity.pptx" download>PowerPoint</a>
-                    and read the comments.</p>
+                    and read the comments
+                    <a href="https://github.com/daniellehu/Ezzy-World">here.</a></p>
+                    <img class="project-photos" src="photos/Snaps.jpg">
                 </div>
-            </div>
-            <div class="project" id="four">
-                <img src="photos/Quad.jpg" class="img-responsive">
-                <div class="project-content">
+                <div class="project project-right">
                     <h2 class="project-title">Quad Academy</h2>
-                    <h3>May 2015 - Present</h3>
-                    <p>Quad Academy is a subdivision of CMU's Robotics Quadrotor
+                    <h3 class="project-date">May 2015 - Present</h3>
+                    <p class="project-description">Quad Academy is a subdivision of CMU's Robotics Quadrotor
                     Club. The subdivision is a project itself, which aims to help
                     spread educational quadrotor kits to high schools around
                     the Pittsburgh area. These kits would help students learn
@@ -85,29 +91,26 @@
                     in the works so more updates will be available. In the meantime,
                     however, you can view Quadrotor Club's 
                     <a href="https://www.flickr.com/photos/130911692@N08/">
-                    flickr account to</a> look at images of some of our earlier work.</p>
+                    flickr account</a> to look at images of some of our earlier work. We are currently partnerning up with Project Ignite (@CMU) to become high school mentors on this subject</p>
+                    <img class="project-photos" src="photos/Quad.jpg">
                 </div>
-            </div>
-            <div class="project" id="five">
-                <img src="photos/Wikigen.jpg" class="img-responsive">
-                <div class="project-content">
+                <div class="project">
                     <h2 class="project-title">Wiki-Gen</h2>
-                    <h3>August - Present</h3>
-                    <p>Wiki-Gen is a Wikipedia Page Generator. A topic is searched
+                    <h3 class="project-date">August 2015 - Present</h3>
+                    <p class="project-description">Wiki-Gen is a Wikipedia Page Generator. A topic is searched
                     on the webpage, and based on the search results, sentences
-                    are formed based on Markov Chains and a database of
+                    are formed using Markov Chains and a database of
                     parsed words from Wikipedia pages. Although the articles may
-                    not entirely make sense, due to the errors made with this
-                    model, the page should relate to typical Wikipedia pages
+                    not entirely make sense, the page should relate to typical Wikipedia pages
                     with any generated page. See the
                     <a href="https://github.com/kevinzhe/wiki-gen">Github</a> 
                     page to follow our process.</p>
+                    <img class="project-photos" src="photos/Wikigen.jpg">
                 </div>
             </div>
-        
         </section>
+        
         <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-        <script text="text/javascript" src="projects.js"></script>
+        <script type="text/javascript" src="projects.js"></script>
     </body>
 </html>
