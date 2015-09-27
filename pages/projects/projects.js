@@ -1,8 +1,8 @@
-$(document).ready(function() {aboutFunction("docReady")});
-$(window).on('resize', function() {aboutFunction("docResize")});
+$(document).ready(function() {projectsFunction("docReady")});
+$(window).on('resize', function() {projectsFunction("docResize")});
 
 
-function aboutFunction(status) {    
+function projectsFunction(status) {    
     
     
     if ($(window).innerWidth() < 992) {
@@ -16,6 +16,7 @@ function aboutFunction(status) {
     else {
         $(".bg-img").css("width", $(window).innerWidth());
         $(".bottom-content").css("max-width", "100%");
+        $("#bg h1").css("width", $(window).innerWidth());
         $(".top-about").css("height", $(".bg-img").css("height"));
         $("#bg").css("height", $(".bg-img").css("height"));
         $("nav").css("height", $("section").css("height"));
