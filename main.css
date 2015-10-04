@@ -24,7 +24,7 @@ overflow: hidden;
 @media only screen and (max-width: 768px)  {
 html, body {
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: scroll;
 }
 #bg {
     background-color: rgba(86, 101, 115, 0.85);
