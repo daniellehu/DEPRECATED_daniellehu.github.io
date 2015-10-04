@@ -1,6 +1,11 @@
 $(document).ready(function() {interestsFunction("docReady")});
 $(window).on('resize', function() {interestsFunction("docResize")});
 
+function imgLoaded(img){
+            var $img = $(img);
+            $img.parent().addClass('loaded');
+        };
+
 function interestsFunction(status) {    
     
     if ($(window).innerWidth() < 992) {

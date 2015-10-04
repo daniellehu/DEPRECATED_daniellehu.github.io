@@ -7,6 +7,13 @@
         <link rel="stylesheet" type="text/css" href="projects.css">
         <link rel="stylesheet" type="text/css" href="../font-awesome.min.css">
         <link rel="shortcut icon" href="../../photos/tab-icon.gif">
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script>
+        function imgLoaded(img){
+            var $img = $(img);
+            $img.addClass('loaded');
+        };
+        </script>
     </head>
     <body>
         <header>
@@ -32,7 +39,7 @@
                     <h1 class="section-elements">projects</h1>
                     <h2 class="section-elements">stuff i made</h2>
                 </div>
-                <img class="bg-img" src="projects.jpg">
+                <img onload="imgLoaded(this)" onload="imgLoaded(this)" class="bg-img img-wrapper" src="projects.jpg">
                 <!--Photo credit to my buddy, my pal, Janette Lau :) [that rhymed]
                  https://www.flickr.com/photos/janettelau   
                 !-->
@@ -49,7 +56,7 @@
                     with any generated page. See the
                     <a href="https://github.com/kevinzhe/wiki-gen">Github</a> 
                     page to follow our process.</p>
-                    <img class="project-photos" src="img/Wikigen.jpg">
+                    <img onload="imgLoaded(this)" class="project-photos img-wrapper" src="img/Wikigen.jpg">
                 </div>
                 <div class="project project-right">
                     <h2 class="project-title">Quad Academy</h2>
@@ -64,7 +71,7 @@
                     however, you can view Quadrotor Club's 
                     <a href="https://www.flickr.com/photos/130911692@N08/">
                     flickr account</a> to look at images of some of our earlier work. We are currently partnerning up with Project Ignite (@CMU) to become high school mentors on this subject</p>
-                    <img class="project-photos" src="img/Quad.jpg">
+                    <img onload="imgLoaded(this)" class="project-photos img-wrapper" src="img/Quad.jpg">
                 </div>
                 <div class="project">
                     <h2 class="project-title">Snaps v Humanity</h2>
@@ -83,7 +90,7 @@
                     our project's <a href="SnapsVsHumanity.pptx" download>PowerPoint</a>
                     and read the comments
                     <a href="https://github.com/daniellehu/Ezzy-World">here.</a></p>
-                    <img class="project-photos" src="img/Snaps.jpg">
+                    <img onload="imgLoaded(this)" class="project-photos img-wrapper" src="img/Snaps.jpg">
                 </div>
                 <div class="project project-right">
                     <h2 class="project-title">Piairno</h2>
@@ -95,7 +102,7 @@
                     (a week long hackathon for engineers at CMU). A link to
                     the project's wiki page can be found
                     <a href="https://build18.ece.cmu.edu/wiki/index.php/Piairno">here.</a></p>
-                    <img class="project-photos" src="img/Piairno.jpg">
+                    <img onload="imgLoaded(this)" class="project-photos img-wrapper" src="img/Piairno.jpg">
                 </div>
                 <div class="project">
                     <h2 class="project-title">Ezzy World</h2>
@@ -106,12 +113,12 @@
                         Fundamentals of Programming</i> course (15-112).
                         Project source code can be found 
                     <a href="https://github.com/daniellehu/Ezzy-World">here.</a></p>
-                    <img class="project-photos" src="img/Ezzy.jpg">
+                    <img onload="imgLoaded(this)" class="project-photos img-wrapper" src="img/Ezzy.jpg">
                 </div>
             </div>
         </section>
         
-        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        
         <script type="text/javascript" src="projects.js"></script>
     </body>
 </html>

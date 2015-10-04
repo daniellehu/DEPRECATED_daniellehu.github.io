@@ -28,17 +28,19 @@
         <link rel="shortcut icon" href="photos/tab-icon.gif">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script>
+        function imgLoaded(img){
+            var $img = $(img);
+            $img.addClass('loaded');
+        };
+        </script>
         <script src="main.js"></script>
     </head>
     
     <body>
         <div id="bg">
         </div>
-        <img class="bg-img" src="photos/snow.jpg">
+        <img class="bg-img img-wrapper" onload="imgLoaded(this)" src="photos/snow.jpg">
         <section>
             <h1>Danielle  Hu</h1>
             <p>welcome to the personal website of</p>

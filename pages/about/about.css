@@ -681,4 +681,14 @@ section img {
 .resume a:hover {
     color: rgba(120, 144, 156, 0.8);
 }
+.img-wrapper {
+    opacity: 0;
+    -webkit-transition: opacity 150ms;
+    -moz-transition: opacity 150ms;
+    -ms-transition: opacity 150ms;
+    transition: opacity 150ms;
+}
+.loaded {
+    opacity: 1;
+}
 }

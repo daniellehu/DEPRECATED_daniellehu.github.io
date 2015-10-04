@@ -115,23 +115,23 @@ section {
 section h1 {
     position: fixed;
     left: 15%;
-    top: 25%;
+    top: 10%;
     color: #E8EAE9;
     text-align: right;
     font-family: mohave;
-    font-size: 15vw;
+    font-size: 7em;
 }
 section p {
     position: fixed;
     left: 15%;
-    top: 25%;
+    top: 15%;
     color: #D0E9DD;
     font-family: raleway;
     font-size: 3vw;
 }
 .boxes {
     position: fixed;
-    top: 55%;
+    top: 45%;
     left: 15%;
     width: 40em;
 }
@@ -181,7 +181,16 @@ section p {
     font-family: "raleway-small";
     text-decoration: none;
 }
-  
+.img-wrapper {
+    opacity: 0;
+    -webkit-transition: opacity 150ms;
+    -moz-transition: opacity 150ms;
+    -ms-transition: opacity 150ms;
+    transition: opacity 150ms;
+}
+.loaded {
+    opacity: 1;
+} 
 }
 
 
@@ -207,16 +216,16 @@ section {
 section h1 {
     position: fixed;
     left: 30%;
-    top: 25%;
+    top: 10%;
     color: #E8EAE9;
     text-align: right;
     font-family: mohave;
-    font-size: 10em;
+    font-size: 9em;
 }
 section p {
     position: fixed;
     left: 30%;
-    top: 25%;
+    top: 20%;
     color: #D0E9DD;
     font-family: raleway;
     font-size: 2em;
@@ -273,5 +282,14 @@ section p {
     font-family: "raleway-small";
     text-decoration: none;
 }
-    
+.img-wrapper {
+    opacity: 0;
+    -webkit-transition: opacity 150ms;
+    -moz-transition: opacity 150ms;
+    -ms-transition: opacity 150ms;
+    transition: opacity 150ms;
+}
+.loaded {
+    opacity: 1;
+}   
 }

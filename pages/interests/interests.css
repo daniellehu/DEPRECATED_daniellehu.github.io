@@ -224,25 +224,25 @@ section img {
 }
 .img-right {
     position: relative;
-    display: inline;
+    display: block;
     padding: 15px;
-    width: 40%;
+    width: 80%;
     left: 5%;
     z-index: 1;
 }
 .img-left {
     position: relative;
-    display: inline;
+    display: block;
     padding: 15px;
-    width: 40%;
+    width: 80%;
     left: 5%;
     z-index: 1;
 }
 .img-middle {
     position: relative;
-    display: inline;
+    display: block;
     padding: 15px;
-    width: 40%;
+    width: 80%;
     left: 5%;
     z-index: 1;
 }
@@ -252,9 +252,10 @@ section img {
 .photo-mobile {
     position: relative;
     z-index: 1;
-    width: 30%;
+    width: 80%;
     left: 5%;
-    display: inline;
+    display: block;
+    padding: 15px;
 }
 .typography {
     font-size: 1em;   
@@ -541,5 +542,15 @@ section img {
 }
 #typography {
     font-size: 1.5em;   
+}
+.img-wrapper {
+    opacity: 0;
+    -webkit-transition: opacity 150ms;
+    -moz-transition: opacity 150ms;
+    -ms-transition: opacity 150ms;
+    transition: opacity 150ms;
+}
+.loaded {
+    opacity: 1;
 }
 }
