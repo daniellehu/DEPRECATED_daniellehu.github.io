@@ -15,7 +15,6 @@ overflow-x: hidden;
         font-family: "raleway-small";
         src: url("../../fonts/Raleway-Thin.ttf");
 }
-
 .important { color: #F1948A; }
 
 /*************** Mobiles ******************/
@@ -29,17 +28,17 @@ h2 a:hover { color: #D5DBDB; }
     z-index: 2;
 }
 #bg {
-    background-color: rgba(21, 67, 96, 0.85);
+    background-color: rgba(127, 140, 141, 0.45);
     position: absolute;
     height: 100%;
     width: 100%;
     z-index: 0;
 }
 header h2, h2 a {
-    position: fixed;
-    left: 80px;
-    top: 35px;
-    font-size: 1.6em;
+position: fixed;
+    left: 15px;
+    top: 15px;
+    font-size: 1.45em;
     font-family: adamCG;
     color: #D0E9DD;
     z-index: 2;
@@ -48,14 +47,6 @@ h2 a {
     border-style: solid;
     border-width: 4px;
     padding: 2px;
-}
-header .fa-bars {
-    position: fixed;
-    right: 100px;
-    top: 40px;
-    font-size: 2.5em;
-    z-index: 2;
-    color: #D0E9DD;
 }
 header .i-on {
     position: fixed;
@@ -66,8 +57,24 @@ header .i-on {
     color: #D0E9DD;
     cursor: pointer;
 }
+header .fa-bars {
+    position: fixed;
+    right: 1em;
+    top: 20px;
+    font-size: 2.5em;
+    z-index: 2;
+    color: #D0E9DD;
+}
+header .i-on {
+    position: fixed;
+    top: 15px;
+    font-size: 2.5em;
+    z-index: 2;
+    color: white;
+    cursor: pointer;
+}
 #nav-button:hover {
-    color: #D5DBDB;
+    color: rgba(120, 144, 156, 1.0);
 }
 nav {
     position: fixed;
@@ -147,7 +154,7 @@ section img {
     position: relative;
     top: 30%;
     text-align: left;
-    font-size: 5em;
+    font-size: 4em;
     font-family: raleway-small;
     color: #F7F9F9;
     margin: 0px; padding: 0px;
@@ -168,39 +175,89 @@ section img {
     position: relative;
     margin: -20px 0px;
     background-color: #F7F9F9;
-    padding: 5% 5%;
     left: 0px;
 }
-.experience {
+.description {
+    padding: 5% 10%;
+    position: relative;
+    z-index: 0;
+    font-family: adamCG;
+    font-size: 1.3em;
+    cursor: default;
+}
+.content {
+    padding: 0% 0%;   
+}
+.column { 
+    opacity: 0.8;
+    cursor: pointer;
+    width: 100%;
+    float: left;
+}
+.content-popup {
+    position: relative;
+    color: white;
+    background-color: rgba(25,25,25,.9);
+    width: 100%;
+    display: none;
+    overflow: hidden;
+}
+.exit-popup {
+    display: none;   
+}
+.content-popup h2 {
+    font-family: adamCG;
+    position: relative;
+    top: 5%;
+    padding-left: 5%;
+    text-align: left;
+    font-size: 1.4em;
+}
+.content-popup p {
+    font-family: raleway;
+    position: relative;
+    top: 25%;
+    padding-left: 5%;
+    font-size: 1em;
     width: 90%;
+    text-align: left;
 }
-.experience h2 {
-    color: rgba(93, 173, 226, 1.0);
-    font-family: raleway;
-    font-size: 2em;
+.img-right {
+    position: relative;
     display: inline;
+    padding: 15px;
+    width: 40%;
+    left: 5%;
+    z-index: 1;
 }
-.experience h3 {
-    font-family: raleway-small;
-    font-size: 1.5em;
+.img-left {
+    position: relative;
     display: inline;
+    padding: 15px;
+    width: 40%;
+    left: 5%;
+    z-index: 1;
 }
-.text {
-    width: 95%;
-    display: block;
-    padding-top: 5px;
+.img-middle {
+    position: relative;
+    display: inline;
+    padding: 15px;
+    width: 40%;
+    left: 5%;
+    z-index: 1;
 }
-.text p {
-    font-family: raleway;
-    font-size: 1.1em;
-    width: 95%;
+.photo-grid {
+    display: none;
 }
-.photos {
-    max-width: 400px;
-    display: block;
-    padding-bottom: 80px;
+.photo-mobile {
     position: relative;
     z-index: 1;
+    width: 30%;
+    left: 5%;
+    display: inline;
+}
+.typography {
+    font-size: 1em;   
 }
 }
 
@@ -216,7 +273,7 @@ h2 a:hover { color: #D5DBDB; }
     z-index: 2;
 }
 #bg {
-    background-color: rgba(127, 140, 141, 0.85);
+    background-color: rgba(127, 140, 141, 0.45);
     position: absolute;
     height: 100%;
     width: 100%;
@@ -249,7 +306,7 @@ header .i-on {
     right: 350px;
     top: 40px;
     font-size: 2.5em;
-    z-index: 2;
+    z-index: 4;
     color: #D0E9DD;
     cursor: pointer;
 }
@@ -315,7 +372,7 @@ nav p {
     right: 0px;
 }
 .nav-on, .nav-off, .header-on, .i-on, h2 a,
-    .fa-bars, section, .section-on,
+    .fa-bars, section, .section-on, 
     #bg h2, #bg h1, .bottom-content, .bottom-content-on {
     -webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
@@ -344,6 +401,7 @@ section img {
     font-family: raleway-small;
     color: #F7F9F9;
     margin: 0px; padding: 0px;
+    cursor: default;
 }
 #bg h2 {
     z-index: 3;
@@ -354,6 +412,7 @@ section img {
     font-size: 4em;
     font-family: raleway-small;
     color: #F1948A  ;  
+    cursor: default;
  }
 .bottom-content {
     position: relative;
@@ -368,26 +427,119 @@ section img {
 .description {
     padding: 5% 25%;
     position: relative;
-    z-index: 2;
+    z-index: 0;
     font-family: adamCG;
     font-size: 1.5em;
+    cursor: default;
 }
-.column-1 {
-    position: absolute;
-    width: 33%;
+.content {
+    padding: 0% 0%;   
+}
+.column { 
+    opacity: 0.8;
+    cursor: pointer;
+}
+.column:hover { opacity: 1.0; }
+.column-2-2 {
+    width: 50%;
     float: left;
+    padding: 0px; margin: 0px;
 }
 .column-2 {
-    position: absolute;
-    width: 33%;
-    left: 33%;
+    width: 25%;
+    float: left;
+    padding: 20px;
+    margin-left: 5%;
+}
+.column-3-3 {
+    width: 33.33%;
     float: left;
 }
-.column-3 {
-    position: absolute;
-    width: 33%;
-    left: 66%;
+.column-1 {
+    width: 100%;
     float: left;
+    left: 0;
 }
-
+.content-popup {
+    position: fixed;
+    color: white;
+    background-color: rgba(25,25,25,.9);
+    z-index: 5;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    display: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.exit-popup {
+    position: absolute;
+    right: 50px;
+    top: 30px;
+    font-size: 2.5em;
+    font-family: raleway-small;
+}
+.exit-popup:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+.content-popup h2 {
+    font-family: adamCG;
+    position: relative;
+    top: 5%;
+    padding-left: 5%;
+    text-align: left;
+    font-size: 2.2em;
+}
+.content-popup p {
+    font-family: raleway;
+    position: absolute;
+    top: 25%;
+    padding-left: 5%;
+    font-size: 1em;
+    width: 40%;
+    text-align: left;
+}
+.content-popup-right {
+    font-family: raleway;
+    position: absolute;
+    top: 25%;
+    font-size: 1em;
+    width: 40%;
+    left: 50%;
+}
+.img-right {
+    position: relative;
+    display: block;
+    padding: 15px;
+    width: 40%;
+    left: 50%;
+}
+.img-left {
+    position: relative;
+    display: block;
+    padding: 15px;
+    width: 40%;
+    left: 5%;
+}
+.img-middle {
+    position: relative;
+    display: block;
+    width: 40%;
+    top: 700px;
+    left: 30%;
+    margin-bottom: 5%;
+}
+.photo-grid {
+    width: 25%;
+    position: relative;
+    display: inline;
+    top: 250px;
+    left: 13%;
+    right: 12%;
+}
+#typography {
+    font-size: 1.5em;   
+}
 }

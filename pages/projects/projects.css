@@ -150,8 +150,9 @@ section img {
 #bg h1 {
     z-index: 3;
     position: relative;
-    top: 200px;
-    text-align: center;
+    top: 140px;
+    left: 25px;
+    text-align: left;
     font-size: 6em;
     font-family: raleway-small;
     color: #F7F9F9;

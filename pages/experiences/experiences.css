@@ -37,9 +37,9 @@ h2 a:hover { color: #D5DBDB; }
 }
 header h2, h2 a {
     position: fixed;
-    left: 80px;
-    top: 35px;
-    font-size: 1.6em;
+    left: 15px;
+    top: 15px;
+    font-size: 1.45em;
     font-family: adamCG;
     color: #D0E9DD;
     z-index: 2;
@@ -51,23 +51,22 @@ h2 a {
 }
 header .fa-bars {
     position: fixed;
-    right: 100px;
-    top: 40px;
+    right: 1em;
+    top: 20px;
     font-size: 2.5em;
     z-index: 2;
     color: #D0E9DD;
 }
 header .i-on {
     position: fixed;
-    right: 350px;
-    top: 40px;
+    top: 15px;
     font-size: 2.5em;
     z-index: 2;
-    color: #D0E9DD;
+    color: white;
     cursor: pointer;
 }
 #nav-button:hover {
-    color: #D5DBDB;
+    color: rgba(120, 144, 156, 1.0);
 }
 nav {
     position: fixed;
@@ -147,7 +146,7 @@ section img {
     position: relative;
     top: 30%;
     text-align: left;
-    font-size: 5em;
+    font-size: 3.6em;
     font-family: raleway-small;
     color: #F7F9F9;
     margin: 0px; padding: 0px;
@@ -160,7 +159,7 @@ section img {
     top: 30%;
     left: 5%;
     text-align: left;
-    font-size: 3em;
+    font-size: 2.5em;
     font-family: raleway-small;
     color: #F1948A  ;  
  }
