@@ -22,6 +22,10 @@ overflow: hidden;
 
 /*************** Mobiles ******************/
 @media only screen and (max-width: 768px)  {
+html, body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
 #bg {
     background-color: rgba(86, 101, 115, 0.85);
     height: 100%;
@@ -39,19 +43,19 @@ section {
     width: 100%;
 }
 section h1 {
-    top: 10%;
+    top: 0%;
     color: #E8EAE9;
     text-align: center;
     font-family: mohave;
     font-size: 10em;
 }
 .boxes {
-    top: 45%;
+    top: 15%;
     width: 100%;
 }
 .buttons {
     font-size: 2em;
-    padding: 20px 30px;
+    padding: 10px 30px;
     color: #D0E9DD;
     display: block;
     border-color: #D0E9DD;
