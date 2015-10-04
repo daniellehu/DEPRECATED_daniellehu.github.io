@@ -1,10 +1,10 @@
 # daniellehu.github.io
 Personal Website
 
+Welcome to the personal website of Danielle Hu. Twas coded by yours truly.
 
-Welcome to the personal website (and source code if you're reading
-            this) of Danielle Hu. Twas coded by yours truly.
             > About - Find out HU I am (get it?)
+
             > Projects - Noun - "prah-jekts"
                          (1) An individual or collaborative enterprise that 
                              is carefully planned and designed to achieve 
@@ -12,13 +12,15 @@ Welcome to the personal website (and source code if you're reading
                          -----or-----
                          (2) a government-subsidized housing development with 
                          relatively low rents.
+
             > Experiences - been there, done that. checkity-check-check.
+
             > Interests (Swell) - I like / me gusta / wo xi huan
             
-            I enjoy web development and decided to give it a swing last summer,
-            but this is my first rodeo so let me know if there are 
-            any bugs, uglies, questions, etc. Find my contact
-            information in the menu! Good-day mates!
+  I enjoy web development and decided to give it a swing last summer,
+  but this is my first rodeo so let me know if there are 
+  any bugs, uglies, questions, etc. Find my contact
+  information in the menu! Good-day mates!
             
             
   Notes: I realize that some pages are slow and load incorrectly.
