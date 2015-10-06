@@ -2,14 +2,8 @@ $(document).ready(function() {homeFunction("docReady")});
 $(window).on('resize', function() {homeFunction("docResize")});
 
 
-function homeFunction(status) {    
-    if ($(window).innerWidth() > 1142) {
-        $(".bg-img").css({
-            width: $(window).innerWidth()});
-    }
-    else if ($(window).innerWidth() < 1142) {
-        $(".bg-img").css('width', 1142);
-    }
+function homeFunction(status) {
+    
     if ($(window).innerWidth() < 768) {
         $("section h1").text("D.Hu");
         $("section p").text("");
@@ -19,7 +13,25 @@ function homeFunction(status) {
         $("section p").text("welcome to the personal website of");
     }
     
+    if ($(window).innerWidth() < 992) {
+        $("#about").html("About Me");
+        $("#projects").html("Projects Done");
+        $("#experiences").html("Experiences / Work");
+        $("#interests").html("Things I Find Swell");   
+    }
+    else {
+        $("#about").html("About<br> \
+                <span class='white'>Me</span>");
+        $("#projects").html("Projects<br> \
+                <span class='white'>Done</span>");
+        $("#experiences").html("Experiences<br> \
+                <span class='white'>/ Work</span>");
+        $("#interests").html("Things I<br> \
+                <span class='white'>Find Swell</span>");
+    }
     //Action commands
     if (status == "docReady") {
     }
 }
+
+//add hover animations

@@ -1,189 +1,82 @@
 html, body {
 margin:0;
 padding:0;
-overflow: hidden;
-}
-@font-face {
-        font-family: "adamCG";
-        src: url("fonts/ADAM.CG%20PRO.otf");
 }
 @font-face {
         font-family: "mohave";
-        src: url("fonts/Mohave-Bold.otf");
+        src: url("fonts/Mohave.otf");
 }
-@font-face {
-        font-family: "raleway";
-        src: url("fonts/Raleway-ExtraBold.ttf");
-}
-@font-face {
-        font-family: "raleway-small";
-        src: url("fonts/Raleway-SemiBold.ttf");
-}
-
 /*************** Mobiles ******************/
-@media only screen and (max-width: 768px)  {
+
+@media only screen and (max-width: 992px) {
 html, body {
-    overflow-x: hidden;
     overflow-y: scroll;
 }
-#bg {
-    background-color: rgba(86, 101, 115, 0.85);
-    height: 100%;
-    width: 100%;
-    position: fixed;
-}
-.bg-img {
-    position: fixed;
-    width: 100%;
-    z-index: -1;
-}
-section {
-    position: absolute;
-    top: 0px;
-    width: 100%;
-}
-section h1 {
-    top: 0%;
-    color: #E8EAE9;
-    text-align: center;
-    font-family: mohave;
-    font-size: 10em;
-}
-.boxes {
-    top: 15%;
-    width: 100%;
-}
-.buttons {
-    font-size: 2em;
-    padding: 10px 30px;
-    color: #D0E9DD;
-    display: block;
-    border-color: #D0E9DD;
-    border-style: solid;
-    border-width: 1px;
-    font-family: "raleway-small";
-    text-decoration: none;
-}
-.buttons:hover {
-    display: block;
-    font-size: 2em;
-    color: rgba(86, 101, 115,1.0);
-    padding: 20px 30px;
-    border-color: #D0E9DD;
-    background-color: #D0E9DD;
-    border-style: solid;
-    font-family: "raleway-small";
-    text-decoration: none;
-}
-.buttons:active {
-    display: block;
-    font-size: 2em;
-    padding: 20px 30px;
-    color: rgba(86, 101, 115,1.0);
-    border-color: #D0E9DD;
-    background-color: #D0E9DD;
-    opacity: 0.9;
-    border-style: solid;
-    font-family: "raleway-small";
-    text-decoration: none;
-}
-.buttons:active {
-    color: #D0E9DD;
-    padding: 20px 30px;
-    border-color: #D0E9DD;
-    background-color: #D0E9DD;
-    opacity: 0.9;
-    border-style: solid;
-    font-family: "raleway-small";
-    text-decoration: none;
-}
-}
-
-@media only screen and (max-width: 992px) and (min-width: 768px) {
 #bg {
     background-color: rgba(86, 101, 115,0.85);
     height: 100%;
     width: 100%;
     position: fixed;
 }
-.bg-img {
+#bg-img {
     position: fixed;
+    background-image: url(photos/snow.jpg);
+    background-repeat: no-repeat;
+    height: 100%;
     width: 100%;
+    background-size: cover;
     z-index: -1;
 }
 section {
     position: absolute;
-    top: 0px;
     width: 100%;
 }
+.sub-header {
+    text-align: center;   
+}
+.header {
+    text-align: center;   
+}
 section h1 {
-    position: fixed;
-    left: 15%;
-    top: 10%;
+    position: relative;
     color: #E8EAE9;
-    text-align: right;
     font-family: mohave;
-    font-size: 7em;
+    font-size: 9em;
 }
 section p {
-    position: fixed;
-    left: 15%;
-    top: 15%;
+    position: relative;
     color: #D0E9DD;
-    font-family: raleway;
-    font-size: 3vw;
+    font-family: mohave;
+    font-size: 1.5em;
+    top: 5.8em;
+    left: -5.5em;
 }
 .boxes {
-    position: fixed;
-    top: 45%;
-    left: 15%;
-    width: 40em;
+    position: relative;
+    top: -4em;
+    text-align: center;
 }
 .buttons {
     display: block;
     font-size: 2em;
-    margin: 10px 0px;
     color: #D0E9DD;
-    padding-left: 10px;
-    border-color: #D0E9DD;
-    border-style: solid;
-    font-family: "raleway-small";
+    margin: 0.5em 13%;
+    font-family: mohave;
     text-decoration: none;
+    text-align: left;
 }
 .buttons:hover {
-    display: block;
-    font-size: 2em;
-    margin: 10px 0px;
-    color: rgba(86, 101, 115,1.0);
-    padding-left: 10px;
+    color: white;
+    border-bottom: solid;
+    border-width: 3px;
     border-color: #D0E9DD;
-    background-color: #D0E9DD;
-    border-style: solid;
-    font-family: "raleway-small";
-    text-decoration: none;
+    -webkit-transition: border 300ms;
+    -moz-transition: border 300ms;
+    -ms-transition: border 300ms;
+    transition: border 300ms;
 }
-.buttons:active {
-    display: block;
-    font-size: 2em;
-    margin: 10px 0px;
-    color: rgba(86, 101, 115,1.0);
-    padding-left: 10px;
-    border-color: #D0E9DD;
-    background-color: #D0E9DD;
-    opacity: 0.9;
-    border-style: solid;
-    font-family: "raleway-small";
-    text-decoration: none;
-}
-.buttons:active {
-    color: #D0E9DD;
-    padding-left: 10px;
-    border-color: #D0E9DD;
-    background-color: #D0E9DD;
-    opacity: 0.9;
-    border-style: solid;
-    font-family: "raleway-small";
-    text-decoration: none;
+.white {
+    color: #E8EAE9;   
 }
 .img-wrapper {
     opacity: 0;
@@ -201,99 +94,75 @@ section p {
 
 /*************** Desktop ******************/
 @media only screen and (min-width: 992px) {
+html, body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
 #bg {
     background-color: rgba(86, 101, 115,0.85);
     height: 100%;
     width: 100%;
     position: fixed;
 }
-.bg-img {
+#bg-img {
     position: fixed;
+    background-image: url(photos/snow.jpg);
+    background-repeat: no-repeat;
+    height: 100%;
     width: 100%;
+    background-size: cover;
     z-index: -1;
 }
 section {
     position: absolute;
-    top: 0px;
+    top: 10%;
     width: 100%;
 }
+.sub-header {
+    text-align: center;   
+}
+.header {
+    text-align: center;   
+}
 section h1 {
-    position: fixed;
-    left: 30%;
-    top: 10%;
+    position: relative;
     color: #E8EAE9;
-    text-align: right;
     font-family: mohave;
     font-size: 9em;
 }
 section p {
-    position: fixed;
-    left: 30%;
-    top: 20%;
+    position: relative;
     color: #D0E9DD;
-    font-family: raleway;
-    font-size: 2em;
+    font-family: mohave;
+    font-size: 1.5em;
+    top: 5.8em;
+    left: -5.5em;
 }
 .boxes {
-    position: fixed;
-    top: 55%;
-    left: 30%;
-    width: 40em;
+    position: relative;
+    top: -4em;
+    text-align: center;
 }
 .buttons {
-    display: block;
+    display: inline-block;
     font-size: 2em;
-    margin: 10px 0px;
     color: #D0E9DD;
-    padding-left: 10px;
-    border-color: #D0E9DD;
-    border-style: solid;
-    font-family: "raleway-small";
+    margin: 0em 1em;
+    font-family: mohave;
     text-decoration: none;
+    width: 140px;
+    text-align: right;
 }
 .buttons:hover {
-    display: block;
-    font-size: 2em;
-    margin: 10px 0px;
-    color: rgba(86, 101, 115,1.0);
-    padding-left: 10px;
+    border-bottom: solid;
+    border-width: 3px;
     border-color: #D0E9DD;
-    background-color: #D0E9DD;
-    border-style: solid;
-    font-family: "raleway-small";
-    text-decoration: none;
+    -webkit-transition: border 300ms;
+    -moz-transition: border 300ms;
+    -ms-transition: border 300ms;
+    transition: border 300ms;
 }
-.buttons:active {
-    display: block;
-    font-size: 2em;
-    margin: 10px 0px;
-    color: rgba(86, 101, 115,1.0);
-    padding-left: 10px;
-    border-color: #D0E9DD;
-    background-color: #D0E9DD;
-    opacity: 0.9;
-    border-style: solid;
-    font-family: "raleway-small";
-    text-decoration: none;
+.white {
+    color: #E8EAE9;
 }
-.buttons:active {
-    color: #D0E9DD;
-    padding-left: 10px;
-    border-color: #D0E9DD;
-    background-color: #D0E9DD;
-    opacity: 0.9;
-    border-style: solid;
-    font-family: "raleway-small";
-    text-decoration: none;
-}
-.img-wrapper {
-    opacity: 0;
-    -webkit-transition: opacity 150ms;
-    -moz-transition: opacity 150ms;
-    -ms-transition: opacity 150ms;
-    transition: opacity 150ms;
-}
-.loaded {
-    opacity: 1;
-}   
 }
