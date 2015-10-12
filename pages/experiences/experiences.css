@@ -150,14 +150,14 @@ section img {
     font-family: raleway-small;
     color: #F7F9F9;
     margin: 0px; padding: 0px;
-    left: 5%;
+    left: 25px;
 }
 #bg h2 {
     z-index: 3;
     margin: 0px 0px; padding: 0px;
     position: relative;
     top: 30%;
-    left: 5%;
+    left: 25px;
     text-align: left;
     font-size: 2.5em;
     font-family: raleway-small;
