@@ -6,13 +6,18 @@
         
         <meta name="viewport" content="width=device-width, initial-scale=1.0; maximum-scale=1.0; user-scalable=no">
         <link rel="stylesheet" type="text/css" href="interests.css">
-        <link rel="stylesheet" type="text/css" href="../font-awesome.min.css">
+        <!--<link rel="stylesheet" type="text/css" href="../font-awesome.min.css">  !-->
         <link rel="shortcut icon" href="../../photos/tab-icon.gif">
         <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
         <script>
         function imgLoaded(img){
             var $img = $(img);
             $img.addClass('loaded');
+        };
+        function divLoaded(){
+            $("#bg").css("height", $(".bg-img").css("height"));
+            $("#bg").css("opacity", 1);
+            $("#bg").css("display", "block");
         };
         </script>
     </head>
@@ -37,7 +42,7 @@
         </header>
         <section>
             <div class="top-about">
-                <div id="bg">
+                <div id="bg" onload="divLoaded">
                     <h1 class="section-elements">stuff i find</h1>
                     <h2 class="section-elements">swell</h2>
                 </div>
