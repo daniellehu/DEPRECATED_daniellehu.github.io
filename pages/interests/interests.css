@@ -41,7 +41,7 @@ position: fixed;
     font-size: 1.45em;
     font-family: adamCG;
     color: #D0E9DD;
-    z-index: 2;
+    z-index: 5;
 }
 h2 a {
     border-style: solid;
@@ -53,7 +53,7 @@ header .i-on {
     right: 350px;
     top: 40px;
     font-size: 2.5em;
-    z-index: 2;
+    z-index: 1000;
     color: #D0E9DD;
     cursor: pointer;
 }
@@ -62,16 +62,17 @@ header .fa-bars {
     right: 1em;
     top: 20px;
     font-size: 2.5em;
-    z-index: 5;
+    z-index: 1000;
     color: #D0E9DD;
 }
 header .i-on {
     position: fixed;
     top: 15px;
     font-size: 2.5em;
-    z-index: 2;
-    color: white;
+    z-index: 1000;
+    color: #D0E9DD;
     cursor: pointer;
+    overflow-y: hidden;
 }
 #nav-button:hover {
     color: rgba(120, 144, 156, 1.0);
@@ -85,7 +86,7 @@ nav {
 }
 nav a {
     display: block;
-    padding: 5px 50px;
+    padding: 3px 50px;
     font-family: raleway;
     font-size: 1.5em;
     color: rgba(120, 144, 156, 1.0);
@@ -95,7 +96,7 @@ nav h2 {
     font-family: raleway;
     font-size: 2em;
     color: rgba(120, 144, 156, 1.0);
-    padding-bottom: 30px;
+    padding-bottom: 0px;
     left: 50px;
 }
 .icons {
@@ -105,7 +106,7 @@ nav h2 {
 }
 .icons-one {
     margin-left: 100px;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 .icons-two {
     margin: 0px 35px;
@@ -126,7 +127,8 @@ nav p {
     margin-top: -10px;
 }
 .nav-off {
-    right: -250px;   
+    right: -250px;
+    z-index: 999;
 }
 .nav-on {
     right: 0px;
