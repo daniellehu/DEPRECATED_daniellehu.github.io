@@ -17,7 +17,12 @@ overflow-x: hidden;
 }
 
 .important { color: #F1948A; }
-
+a {
+    color: #F1948A;
+}
+a:hover {
+    opacity: 0.8;
+}
 /*************** Mobiles ******************/
 @media only screen and (max-width: 992px)  {
 a {
@@ -134,6 +139,7 @@ nav p {
 section {
     position: absolute;
     left: 0px;
+    background-color: #F7F9F9;
 }
 section img {
     width: 100%;
@@ -187,13 +193,14 @@ section img {
 }
 .text {
     width: 95%;
+    text-align: justify;
     display: block;
     padding-top: 5px;
 }
 .text p {
     font-family: raleway;
     font-size: 1.1em;
-    width: 95%;
+    width: 80%;
 }
 .photos {
     max-width: 400px;
@@ -324,6 +331,7 @@ nav p {
 section {
     position: absolute;
     left: 0px;
+    background-color: #F7F9F9;
 }
 section img {
     width: 100%;

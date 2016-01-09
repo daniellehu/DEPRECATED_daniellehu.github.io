@@ -5,19 +5,21 @@ overflow-x: hidden;
 }
 @font-face {
         font-family: "adamCG";
-        src: url("../../fonts/ADAM.CG%20PRO.otf");
+        src: url("../../../fonts/ADAM.CG%20PRO.otf");
 }
 @font-face {
         font-family: "raleway";
-        src: url("../../fonts/Raleway-Regular.ttf");
+        src: url("../../../fonts/Raleway-Regular.ttf");
 }
 @font-face {
         font-family: "raleway-small";
-        src: url("../../fonts/Raleway-Thin.ttf");
+        src: url("../../../fonts/Raleway-Thin.ttf");
 }
-
-.important { color: #F1948A; }
-
+@font-face {
+        font-family: "baskerville";
+        src: url("../../../fonts/baskvl.ttf")
+    
+}
 /*************** Mobiles ******************/
 @media only screen and (max-width: 992px)  {
 a {
@@ -29,7 +31,7 @@ h2 a:hover { color: #D5DBDB; }
     z-index: 2;
 }
 #bg {
-    background-color: rgba(23, 32, 42, 0.90);
+    background-color: rgba(162, 217, 206, 0.90);
     position: absolute;
     height: 100%;
     width: 100%;
@@ -42,7 +44,7 @@ header h2, h2 a {
     font-size: 1.45em;
     font-family: adamCG;
     color: #D0E9DD;
-    z-index: 1000;
+    z-index: 2;
 }
 h2 a {
     border-style: solid;
@@ -54,15 +56,15 @@ header .fa-bars {
     right: 1em;
     top: 20px;
     font-size: 2.5em;
-    z-index: 1000;
+    z-index: 2;
     color: #D0E9DD;
 }
 header .i-on {
     position: fixed;
     top: 15px;
     font-size: 2.5em;
-    z-index: 1000;
-    color: #D0E9DD;
+    z-index: 2;
+    color: white;
     cursor: pointer;
 }
 #nav-button:hover {
@@ -122,7 +124,6 @@ nav p {
 }
 .nav-off {
     right: -250px;   
-    z-index: 999;
 }
 .nav-on {
     right: 0px;
@@ -143,7 +144,7 @@ section img {
     z-index: -1;
 }
 .section-elements {
-    left: 0px;
+    left: 0px; 
 }
 .section-on {
     left: 0px;   
@@ -151,20 +152,20 @@ section img {
 #bg h1 {
     z-index: 3;
     position: relative;
-    top: 140px;
+    top: 150px;
     left: 25px;
     text-align: left;
-    font-size: 5em;
+    font-size: 6em;
     font-family: raleway-small;
     color: #F7F9F9;
-    margin: 0px; padding: 5px;
+    margin: 0px; padding: 0px;
 }
 #bg h2 {
     z-index: 3;
     margin: 130px 0px; padding: 0px;
     position: relative;
     text-align: left;
-    font-size: 3em;
+    font-size: 4em;
     left: 25px;
     font-family: raleway-small;
     color: #F1948A  ;  
@@ -173,51 +174,33 @@ section img {
     position: relative;
     margin: -20px 0px;
     background-color: #F7F9F9;
+    padding: 5% 35px;
     left: 0px;
     max-width: auto;
+    font-family: raleway;
 }
 .bottom-content-on {
     left: 0px;   
 }
 .important { color: #F1948A; }
-.project {
-    padding: 25px 25px;
-    width: 85%;
+.entry {
+    width: 50%;
+    margin-left: 30px;
+}
+.entry h3 {
+    font-size: 2em;
+    font-family: adamCG;
+}
+.entry p {
+    font-family: baskerville;
+    font-size: 1.2em;
+    color: black;
     position: relative;
-    border-bottom: 2px;
-    border-bottom-style: solid;
-    border-color: #D0E9DD;
 }
-.project-title {
-    font-size: 2.5em;
-    color: rgba(23, 32, 42, 0.90);
-    font-family: raleway;
+.entry li {
+    margin-left: -30px;
+    padding: 5px 0px;   
 }
-.project-date {
-    font-size: 1em;
-    color: rgba(23, 32, 42, 0.90);
-    font-family: raleway;
-}
-.project-photos {
-    width: 100%;
-}
-.project-description {
-    width: 100%;
-    font-family: raleway;
-    font-size: 1em;
-    text-align: left;
-}
-.project-description a {
-    color: #1ABC9C;
-}
-.project-description a:visited {
-    color: #1ABC9C;
-}
-.project-description a:hover {
-    color: #1ABC9C;
-    opacity: 0.7;
-}
-    
 }
 
 
@@ -232,7 +215,7 @@ h2 a:hover { color: #D5DBDB; }
     z-index: 2;
 }
 #bg {
-    background-color: rgba(23, 32, 42, 0.90);
+    background-color: rgba(162, 217, 206, 0.90);
     position: absolute;
     height: 100%;
     width: 100%;
@@ -294,7 +277,7 @@ nav h2 {
     font-family: raleway;
     font-size: 2em;
     color: rgba(120, 144, 156, 1.0);
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     left: 50px;
 }
 .icons {
@@ -363,7 +346,7 @@ section img {
 }
 #bg h2 {
     z-index: 3;
-    margin: -15px 0px; padding: 0px;
+    margin: -40px 0px; padding: 0px;
     position: relative;
     top: 30%;
     text-align: center;
@@ -377,53 +360,28 @@ section img {
     background-color: #F7F9F9;
     padding: 5% 15%;
     left: 0px;
+    font-family: raleway;
 }
 .bottom-content-on {
     left: -250px;   
 }
-.project {
-    padding: 25px 15px;
-    width: 45%;
-    position: relative;
-    border-color: #D0E9DD;
-    border-style: solid;
-    border-width: 3px;
-    border-radius: 2px;
-    margin-top: -20%;
+.important { color: #F1948A; }
+.entry {
+    width: 60%;
+    margin: 0 auto;
+    font-family: baskerville;
 }
-.project-right {
-    left: 50%;
-    margin-top: -20%;
-    
+.entry h3 {
+    font-size: 2em;
+    font-family: adamCG;
 }
-.project-title {
-    font-size: 2.5em;
-    color: rgba(23, 32, 42, 0.90);
-    font-family: raleway;
+.entry p {
+    font-family: baskerville;
+    font-size: 1.2em;
+    color: black;
 }
-.project-date {
-    font-size: 1em;
-    color: rgba(23, 32, 42, 0.90);
-    font-family: raleway;
-}
-.project-photos {
-    width: 100%;
-}
-.project-description {
-    width: 100%;
-    font-family: raleway;
-    font-size: 1em;
-    text-align: justify;
-}
-.project-description a {
-    color: #1ABC9C;
-}
-.project-description a:visited {
-    color: #1ABC9C;
-}
-.project-description a:hover {
-    color: #1ABC9C;
-    opacity: 0.7;
+.entry li {
+    padding: 10px 0px;   
 }
 .img-wrapper {
     opacity: 0;
@@ -435,6 +393,4 @@ section img {
 .loaded {
     opacity: 1;
 }
-
-    
 }
