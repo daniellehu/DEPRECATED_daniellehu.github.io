@@ -5,13 +5,14 @@ $(window).on('resize', function() {experiencesFunction("docResize")});
 function experiencesFunction(status) {    
     $("#bg h1").css("width", $(window).innerWidth());
     $("#bg").css("height", $(".bg-img").css("height"));
-    $(".bottom-content").css("width", $(window).innerWidth);
+    
     if ($(window).innerWidth() < 992) {
         $(".bg-img").css("width", "992px");
         $(".top-about").css("height", $(".bg-img").css("height"));
         $("#bg").css("height", $(".bg-img").css("height"));
         $("nav").css("height", $("section").css("height"));
-        
+        $(".text").css("width", $(window).innerWidth());
+        $(".bottom-content").css("width", $(window).innerWidth());
         //Changing HTML content to move images
         $("#quadrotor-mobile").html(" \
                     <h2>CMU Quadrotor - Robotics</h2>\
@@ -36,6 +37,8 @@ function experiencesFunction(status) {
         $(".top-about").css("height", $(".bg-img").css("height"));
         $("#bg").css("height", $(".bg-img").css("height"));
         $("nav").css("height", $("section").css("height"));
+        $(".text").css("width", "60%");
+        $(".bottom-content").css("width", "auto");
         //Changing HTML content to move images back
         $("#quadrotor-mobile").html("<img src='img/quadrotor.gif' class='photos photos-left'>\
                     <h2>CMU Quadrotor - Robotics</h2>\

@@ -193,14 +193,13 @@ section img {
 }
 .text {
     width: 95%;
-    text-align: justify;
     display: block;
     padding-top: 5px;
 }
 .text p {
     font-family: raleway;
     font-size: 1.1em;
-    width: 80%;
+    width: 90%;
 }
 .photos {
     max-width: 400px;
