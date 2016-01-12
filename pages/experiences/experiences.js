@@ -5,7 +5,6 @@ $(window).on('resize', function() {experiencesFunction("docResize")});
 function experiencesFunction(status) {    
     $("#bg h1").css("width", $(window).innerWidth());
     $("#bg").css("height", $(".bg-img").css("height"));
-    
     if ($(window).innerWidth() < 992) {
         $(".bg-img").css("width", "992px");
         $(".top-about").css("height", $(".bg-img").css("height"));
