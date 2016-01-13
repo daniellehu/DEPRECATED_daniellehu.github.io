@@ -9,17 +9,6 @@
         <link rel="stylesheet" type="text/css" href="../font-awesome.min.css">
         <link rel="shortcut icon" href="../../photos/tab-icon.gif">
         <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-        <script>
-        function imgLoaded(img){
-            var $img = $(img);
-            $img.addClass('loaded');
-        };
-        function divLoaded(){
-            $("#bg").css("height", $(".bg-img").css("height"));
-            $("#bg").css("opacity", 1);
-            $("#bg").css("display", "block");
-        };
-        </script>
     </head>
     <body>
         <header>
@@ -42,11 +31,11 @@
         </header>
         <section>
             <div class="top-about">
-                <div id="bg" onload="divLoaded">
+                <div id="bg">
                     <h1 class="section-elements">stuff i find</h1>
                     <h2 class="section-elements">swell</h2>
                 </div>
-                <img class="bg-img img-wrapper" src="interests.jpg" onload="imgLoaded(this)"></div>
+                <img class="bg-img" src="interests.jpg"></div>
                 <div class="bottom-content">
                     <h3 class="description"><span style="color: #515A5A">So what's up with this page? &<br> who still uses the word swell?<br><br></span>
                         <span style="color: #E74C3C">I do.</span><br>Matter of fact, I find the word 'swell' quite swell. On this page, you'll find my <span style="color: #E74C3C">interests/hobbies</span>
@@ -55,7 +44,7 @@
                 
                     <div class="content">
                         <div class="column column-2-2">
-                            <img src="img/coffee-main.jpg" class="img-wrapper" onload="imgLoaded(this)">
+                            <img src="img/coffee-main.jpg">
                         </div>
                         <div class="content-popup">
                                 <div class="exit-popup">X</div>
@@ -71,7 +60,7 @@
                             </div>
                         
                         <div class="column column-2-2">
-                            <img src="img/tea-main.jpg" class="img-wrapper" onload="imgLoaded(this)">
+                            <img src="img/tea-main.jpg">
                             <!--Photo Credit: Kayla Dodds and her wonderful connection to Teavana <3 !-->
                         </div>
                         <div class="content-popup">
@@ -80,11 +69,11 @@
                             <p class="content-popup-right">Often seen as a competitor, tea is equally as valuable to me as coffee. Both provide caffeination, both taste great, and both are a process to learn. I'm still quite a novice at making and understanding tea. I can name up to about four types before I start to seriously have to ponder what comes next (Green, Black, Oolong [only cause this one's fun to say], and Chai).<br><br>I can't tell you how refreshing a sip of freshly made tea tastes to me. It simply beats coffee in this manner by being an agent that not only awakes you, but also relaxes you.<br><br>
                             Although I make coffee and drink it more often, I reserve tea for the weekends where I want to relax in my room for a reason: to savor the experience. It's more to me than something that I make in the morning to keep me going throughout the day. It's something you sit down for and slow down your busy schedule for. And all for what? A couple of sips.<br><br>
                             That being said, teahouses also give off this culturally enlightened vibe. They're where you go to catch up with an old friend who you've always considered wise, or perhaps a place where you'd meet your professor to learn more about them as a person and all the knowledge that they've built over the years. It's where you'd expect to learn something about life.<br><br>My friend and I wanted to start a high school club at one time... <i>The Enlightened ParTEA</i>. Where philosophical and cultural conversations could be exchanged over various teas from around the world. Although we never went through with the organization, I'd like to give kudos to the younger versions of us for having that spirit.<br><br><br></p>
-                            <img src="img/tea-1.JPG" class="img-left img-wrapper" onload="imgLoaded(this)">
+                            <img src="img/tea-1.JPG" class="img-left">
                         </div>
                         
                         <div class="column column-3-3">
-                            <img src="img/photography-main.jpg" class="img-wrapper" onload="imgLoaded(this)">
+                            <img src="img/photography-main.jpg">
                         </div>
                         <div class="content-popup">
                             <div class="exit-popup">X</div>
@@ -101,7 +90,7 @@
                             <br><br>
                         </div>
                         <div class="column column-3-3">
-                            <img src="img/typography-main.jpg" class="img-wrapper" onload="imgLoaded(this)">
+                            <img src="img/typography-main.jpg">
                         </div>
                         <div class="content-popup">
                             <div class="exit-popup">X</div>
@@ -111,7 +100,7 @@
                             <img src="img/typography-1.gif" class="img-middle">
                         </div>
                         <div class="column column-3-3">
-                            <img src="img/design-main.jpg" class="img-wrapper" onload="imgLoaded(this)">
+                            <img src="img/design-main.jpg">
                         </div>
                         <div class="content-popup">
                             <div class="exit-popup">X</div>
@@ -120,7 +109,7 @@
                             <p class="content-popup-right">There are two aspects of design that I find really great. There's the part that people typically think about. "Does it look pretty?" And yes, that aspect of design is one that I strive to get better at. But more than that, design is about "Does it work?" It's the study of creating something that works.<br><br>I used to think that design majors were just people who created pretty looking models of the real world. But design is literally everywhere. It's in my major too. Computer and electrical engineers need to find the best design for their architectures. They need to know that the circuit boards that they just drew up will be both efficient and effective. In other terms, they need to find a suitable design.<br><br>The word <i>design</i> encompasses so many subjects, and yet it's simple and aesthetically pleasing. Whoever designed the word 'design' did a pretty darn good job. There's not much to say about this interest of mine until I start to build a better understanding of it in my later years, but as of right now, <span style="color: salmon">design is quite swell</span>.</p>
                         </div>
                         <div class="column column-1">
-                            <img src="img/hackathons-main.jpg" class="img-wrapper" onload="imgLoaded(this)">
+                            <img src="img/hackathons-main.jpg">
                         </div>
                         <div class="content-popup">
                             <div class="exit-popup">X</div>

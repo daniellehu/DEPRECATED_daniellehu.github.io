@@ -20,6 +20,11 @@ overflow-x: hidden;
         src: url("../../../fonts/baskvl.ttf")
     
 }
+.bold {
+    font-style: oblique;
+    font-family: adamCG;
+    
+}
 /*************** Mobiles ******************/
 @media only screen and (max-width: 992px)  {
 a {
@@ -367,7 +372,7 @@ section img {
 }
 .important { color: #F1948A; }
 .entry {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     font-family: baskerville;
 }

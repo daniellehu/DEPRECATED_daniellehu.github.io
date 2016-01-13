@@ -405,15 +405,5 @@ section img {
 .photos-left {
     float: left;
 }
-.img-wrapper {
-    opacity: 0;
-    -webkit-transition: opacity 150ms;
-    -moz-transition: opacity 150ms;
-    -ms-transition: opacity 150ms;
-    transition: opacity 150ms;
-}
-.loaded {
-    opacity: 1;
-}
 
 }
