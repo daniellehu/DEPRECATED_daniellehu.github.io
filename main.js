@@ -31,6 +31,12 @@ function homeFunction(status) {
     }
     //Action commands
     if (status == "docReady") {
+        
+        function introFunction() {
+            $("header").removeClass("intro-header");
+            $("#intro-text").html("");
+        } 
+        setTimeout(introFunction, 3500);
     }
 }
 

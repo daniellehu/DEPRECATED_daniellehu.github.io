@@ -6,6 +6,10 @@ padding:0;
         font-family: "mohave";
         src: url("fonts/Mohave.otf");
 }
+@font-face {
+        font-family: "adamCG";
+        src: url("fonts/ADAM.CG%20PRO.otf")
+}
 /*************** Mobiles ******************/
 
 @media only screen and (max-width: 992px) {
@@ -32,7 +36,7 @@ section {
     width: 100%;
 }
 .sub-header {
-    text-align: center;   
+    text-align: center;
 }
 .header {
     text-align: center;   
@@ -78,6 +82,9 @@ section p {
 .white {
     color: #E8EAE9;   
 }
+header {
+    display: none;
+}
 }
 
 
@@ -87,6 +94,113 @@ section p {
 html, body {
     overflow-x: hidden;
     overflow-y: auto;
+}
+.slideUp{
+	animation-name: slideUp;
+	-webkit-animation-name: slideUp;	
+
+	animation-duration: 1s;	
+	-webkit-animation-duration: 1s;
+
+	animation-timing-function: ease;	
+	-webkit-animation-timing-function: ease;
+
+	visibility: visible !important;			
+}
+@keyframes slideUp {
+	0% {
+		transform: translateY(100%);
+	}
+	50%{
+		transform: translateY(-8%);
+	}
+	65%{
+		transform: translateY(4%);
+	}
+	80%{
+		transform: translateY(-4%);
+	}
+	95%{
+		transform: translateY(2%);
+	}			
+	100% {
+		transform: translateY(0%);
+	}	
+}
+@-webkit-keyframes slideUp {
+	0% {
+		-webkit-transform: translateY(100%);
+	}
+	50%{
+		-webkit-transform: translateY(-8%);
+	}
+	65%{
+		-webkit-transform: translateY(4%);
+	}
+	80%{
+		-webkit-transform: translateY(-4%);
+	}
+	95%{
+		-webkit-transform: translateY(2%);
+	}			
+	100% {
+		-webkit-transform: translateY(0%);
+	}	
+}
+.intro-header {
+    background-color: #212F3C;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    opacity: 1.0;
+    z-index: 999;
+    animation-name: intro;
+    animation-duration: 4s;
+}
+@keyframes intro {
+    0% { 
+        opacity: 1.0; 
+        color: rgba(0,0,0,0.0);
+    }
+    80% {
+        color: rgba(0,0,0,1.0);
+        opacity: 1.0;
+    }
+    90% {
+        opacity: 0.0;
+        color: rgba(0,0,0,1.0);
+    }
+    100% {
+        opacity: 0.0;
+        color: rgba(0,0,0,1.0);
+    }
+}
+#intro-text {
+    color: rgba(255,255,255,1.0);
+    position: relative;
+    top: 15%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    font-size: 2000%;
+    font-family: adamCG;
+}
+#period {
+    color: white;
+    animation-name: intro-period;
+    animation-duration: 4s;
+    animation-delay: 1s;
+}
+@keyframes intro-period {
+    0% {
+        color: white;
+    }
+    10% {
+        color: #86C4EB;
+    }
+    100% {
+        color: #86C4EB;
+    }
 }
 #bg {
     background-color: rgba(86, 101, 115,0.85);
