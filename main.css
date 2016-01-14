@@ -99,8 +99,8 @@ html, body {
 	animation-name: slideUp;
 	-webkit-animation-name: slideUp;	
 
-	animation-duration: 1s;	
-	-webkit-animation-duration: 1s;
+	animation-duration: 1.5s;	
+	-webkit-animation-duration: 1.5s;
 
 	animation-timing-function: ease;	
 	-webkit-animation-timing-function: ease;
@@ -154,6 +154,7 @@ html, body {
     height: 100%;
     opacity: 1.0;
     z-index: 999;
+    cursor: none;
     animation-name: intro;
     animation-duration: 4s;
 }
@@ -184,6 +185,7 @@ html, body {
     text-align: center;
     font-size: 2000%;
     font-family: adamCG;
+   
 }
 #period {
     color: white;
