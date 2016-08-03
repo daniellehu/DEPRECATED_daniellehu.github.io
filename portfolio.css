@@ -1,0 +1,763 @@
+@font-face {
+        font-family: "nav-font";
+        src: url("fonts/AkzidenzGrotesk-Cond.otf");
+}
+
+@font-face {
+        font-family: "bask-header";
+        src: url("fonts/BaskervilleMTStd-SemiBd.otf");
+}
+
+@font-face {
+        font-family: "bask-normal";
+        src: url("fonts/BaskervilleMTStd-Regular.otf");
+}
+
+@media only screen and (max-width: 1388px) {
+html, body {
+    padding: 0; margin: 0;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    color: white;
+    opacity: 0.5;
+}
+
+nav {
+    display: none;
+}
+.arrow-down {
+    display: hidden;
+}
+
+.important {
+    color: rgba(217, 136, 128, 1);
+}
+#about {
+    background-color: rgba(93, 109, 126, 1);
+    margin: 0; padding: 0;
+    position: relative;
+}
+.about-content {
+    color: rgba(213, 216, 220, 1);
+    z-index: 1;
+    position: absolute;
+    left: 250px;
+    top: 20%;
+    margin-left: 150px;
+}
+.about-content h2 {
+    font-size: 3.5em;
+    margin: 0; padding: 0;
+    font-family: bask-header;
+}
+.about-content h1 {
+    font-size: 8em;
+    margin: 0; padding: 0;
+    font-family: bask-header;
+}
+.about-content pre {
+    font-family: bask-normal;
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+}
+.about-content-p {
+    margin-top: 100px;
+}
+
+#experiences {
+    background-color: rgba(189, 195, 199, 1);
+    margin: 0; padding: 0;
+    position: relative;
+}
+.content {
+    color: rgba(93, 109, 126, 1);
+    z-index: 1;
+    position: absolute;
+    left: 250px;
+    top: 4%;
+    margin-left: 100px;
+}
+.content h2 {
+    font-family: bask-header;
+    font-size: 3.5em;
+    margin: 0;
+}
+.content-p {
+    font-family: bask-normal;
+    margin: 0; padding: 0;
+    margin-top: 70px;
+    color: rgba(93, 109, 126, 1);
+    width: 90%;
+}
+.content-p-title {
+    font-size: 1.4em;
+    margin: 0; padding: 0;
+    display: inline;
+    width: 20%;
+}
+.content-p-body {
+    display: inline-block;
+    font-size: 1.2em;
+    width: 90%;
+    margin-left: 5%;
+    text-align: justify;
+}
+
+#projects {
+    background-color: rgba(93, 109, 126, 1);
+    margin: 0; padding: 0;
+    position: relative;
+}
+.projects-content b {
+    text-decoration: underline;
+    font-size: 1.2em;
+}
+.content-inverted {
+    color: rgba(213, 216, 220, 1);
+    z-index: 1;
+    position: absolute;
+    left: 250px;
+    top: 4%;
+    margin-left: 100px;
+}
+.content-inverted h2 {
+    font-family: bask-header;
+    font-size: 3.5em;
+    margin: 0;
+}
+.content-inverted-p {
+    font-family: bask-normal;
+    padding: 0;
+    font-size: 1.2em;
+}
+.projects-content {
+    width: 90%;
+    margin-top: 5px;
+}
+.content-inverted-p pre{
+    position: relative;
+    width: 33%;
+    color: rgba(213, 216, 220, 1);
+    list-style: none;
+    margin: 0; padding: 0;
+    padding-top: 5%;
+    height: 90%;
+    float: left;
+    font-family: bask-normal;
+}
+.classes-type {
+    font-size: 1.5em;
+    text-decoration: underline;
+    margin-left: 30%;
+}
+
+#skills {
+    background-color: rgba(189, 195, 199, 1);
+    margin: 0; padding: 0;
+    position: relative;
+}
+.skills-container {
+    position: absolute;
+    width: 70%;
+    height: 600px;
+    left: -550px; top: 150px;
+    background-color: rgba(255, 255, 255, 0.0);
+    transition: transform 2s, background-color 4s, ease;
+    -webkit-transition: transform 2s, background-color 4s, ease;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3); 
+    cursor: default;
+}
+.in-view-skills {
+    transform: translateX(900px);
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.skills-bar {
+    height: 300px;
+    position: relative;
+    top: 20%;
+}
+.left-column {
+    width: 50%;
+    position: absolute;
+    left: 10%;
+}
+.right-column {
+    width: 50%;
+    position: absolute;
+    left: 50%
+}
+.skillOutline {
+        margin-top: -2%;
+        position: relative;
+        width: 70%;
+        height: 10px;
+        margin-left: 0%;
+        border-color: white;
+        background-color: white;
+        border-width: 2px;
+        border-radius: 0px;
+        border-style: solid;
+        display: block;
+}
+.skillText {
+        font-family: bask-normal;
+        font-size: 1.2em;
+        color: rgba(93, 109, 126, 1);
+}
+#pythonBar {
+                position: absolute;
+                width: 85%;
+                height: 80%;
+                top: 10%;
+                border-radius: 0px;
+                background-color: rgba(120, 144, 156, 1.0);
+                animation: pyBar;
+                animation-duration: 4s;
+}
+@keyframes pyBar {
+    from { width: 1%; }
+    to { width: 85%; }
+}
+#cBar {
+                position: absolute;
+                width: 75%;
+                height: 80%;
+                top: 10%;
+                border-radius: 0px;
+                background-color: rgba(120, 144, 156, 1.0);
+                animation: cBar;
+                animation-duration: 4s;
+}
+@keyframes cBar {
+    from { width: 1%; }
+    to { width: 75%; }
+}
+#arduinoBar {
+                position: absolute;
+                width: 50%;
+                height: 80%;
+                top: 10%;
+                border-radius: 0px;
+                background-color: rgba(120, 144, 156, 1.0);
+                animation: arduinoBar;
+                animation-duration: 4s;
+}
+@keyframes arduinoBar {
+    from { width: 1%; }
+    to { width: 50%; }
+}
+#sqlBar {
+                position: absolute;
+                width: 55%;
+                height: 80%;
+                top: 10%;
+                border-radius: 0px;
+                background-color: rgba(120, 144, 156, 1.0);
+                animation: sqlBar;
+                animation-duration: 4s;
+}
+@keyframes sqlBar {
+    from { width: 1%; }
+    to { width: 55%; }
+}
+#htmlcssBar {
+                position: absolute;
+                width: 90%;
+                height: 80%;
+                top: 10%;
+                border-radius: 0px;
+                background-color: rgba(120, 144, 156, 1.0);
+                animation: htmlcssBar;
+                animation-duration: 4s;
+}
+@keyframes htmlcssBar {
+    from { width: 1%; }
+    to { width: 90%; }
+}
+#jsBar {
+                position: absolute;
+                width: 70%;
+                height: 80%;
+                top: 10%;
+                border-radius: 0px;
+                background-color: rgba(120, 144, 156, 1.0);
+                animation: jsBar;
+                animation-duration: 4s;
+}
+@keyframes jsBar {
+    from { width: 1%; }
+    to { width: 70%; }
+}
+#adobesBar {
+                position: absolute;
+                width: 60%;
+                height: 80%;
+                top: 10%;
+                border-radius: 0px;
+                background-color: rgba(120, 144, 156, 1.0);
+                animation: adobesBar;
+                animation-duration: 4s;
+}
+@keyframes adobesBar {
+    from { width: 1%; }
+    to { width: 60%; }
+}
+#learnBar {
+                position: absolute;
+                width: 100%;
+                height: 80%;
+                top: 10%;
+                border-radius: 0px;
+                background-color: rgba(120, 144, 156, 1.0);
+                animation: learnBar;
+                animation-duration: 4s;
+}
+@keyframes learnBar {
+    from { width: 1%; }
+    to { width: 100%; }
+}
+
+#classes {
+    background-color: rgba(93, 109, 126, 1);
+    margin: 0; padding: 0;
+    position: relative;
+}
+.classes-container {
+    position: absolute;
+    width: 70%;
+    height: 600px;
+    left: 900px; top: 150px;
+    background-color: rgba(40, 55, 71, 0.0);
+    transition: transform 2s, background-color 4s, ease;
+    -webkit-transition: transform 2s, background-color 4s, ease;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3); 
+    cursor: default;
+}
+.in-view-classes {
+    transform: translateX(-550px);
+    background-color: rgba(40, 55, 71, 0.6);
+}
+
+
+#more {
+    background-color: rgba(189, 195, 199, 1);
+    margin: 0; padding: 0;
+    position: relative;
+}
+.content-more-contact {
+    padding: 30px;
+    background-color: rgba(255,255,255,0.3);
+    margin: 50px auto;
+    width: 100%;
+    font-size: 1.5em;
+}
+.content-more-links {
+    padding: 30px;
+    display: block;
+    background-color: rgba(255,255,255,0.3);
+    width: 100%;
+    position: relative;
+}
+.content-more-links p {
+    display: inline-block;
+    font-size: 1.7em;
+}
+}
+
+@media only screen and (min-width: 1388px)  {
+    html, body {
+        padding: 0; margin: 0;
+        overflow-x: hidden;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    a:hover {
+        color: white;
+        opacity: 0.5;
+    }
+
+    nav {
+        position: fixed;
+        left: 0; top: 0;
+        height: 100%;
+        width: 250px;
+        font-family: nav-font; font-size: 1.4em;
+        background-color: rgba(171, 178, 185, 0.8);
+        cursor: default;
+        z-index: 5;
+    }
+
+    .arrow-down {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        text-align: center;
+        font-size: 2em;
+        color: white;
+    }
+    .arrow-down:hover {
+        opacity: 0.5;
+    }
+
+    .important {
+        color: rgba(217, 136, 128, 1);
+    }
+
+    nav ul {
+        position: relative;
+        left: 25px;
+        top: 20%;
+        list-style-type: none;
+        width: 90%;
+    }
+
+    nav ul li {
+        margin: 10px 0px;
+    }
+    nav ul li:hover {
+        opacity: 0.5;
+
+    }
+
+    #about {
+        background-color: rgba(93, 109, 126, 1);
+        margin: 0; padding: 0;
+        position: relative;
+    }
+    .about-content {
+        color: rgba(213, 216, 220, 1);
+        z-index: 1;
+        position: absolute;
+        left: 250px;
+        top: 20%;
+        margin-left: 150px;
+    }
+    .about-content h2 {
+        font-size: 3.5em;
+        margin: 0; padding: 0;
+        font-family: bask-header;
+    }
+    .about-content h1 {
+        font-size: 8em;
+        margin: 0; padding: 0;
+        font-family: bask-header;
+    }
+    .about-content pre {
+        font-family: bask-normal;
+        font-size: 1.2em;
+        margin: 0;
+        padding: 0;
+    }
+    .about-content-p {
+        margin-top: 100px;
+    }
+
+    #experiences {
+        background-color: rgba(189, 195, 199, 1);
+        margin: 0; padding: 0;
+        position: relative;
+    }
+    .content {
+        color: rgba(93, 109, 126, 1);
+        z-index: 1;
+        position: absolute;
+        left: 250px;
+        top: 4%;
+        margin-left: 100px;
+    }
+    .content h2 {
+        font-family: bask-header;
+        font-size: 3.5em;
+        margin: 0;
+    }
+    .content-p {
+        font-family: bask-normal;
+        margin: 0; padding: 0;
+        margin-top: 70px;
+        color: rgba(93, 109, 126, 1);
+        width: 90%;
+    }
+    .content-p-title {
+        font-size: 1.4em;
+        margin: 0; padding: 0;
+        display: inline;
+        width: 20%;
+    }
+    .content-p-body {
+        display: inline-block;
+        font-size: 1.2em;
+        width: 90%;
+        margin-left: 5%;
+        text-align: justify;
+    }
+
+    #projects {
+        background-color: rgba(93, 109, 126, 1);
+        margin: 0; padding: 0;
+        position: relative;
+    }
+    .projects-content b {
+        text-decoration: underline;
+        font-size: 1.2em;
+    }
+    .content-inverted {
+        color: rgba(213, 216, 220, 1);
+        z-index: 1;
+        position: absolute;
+        left: 250px;
+        top: 4%;
+        margin-left: 100px;
+    }
+    .content-inverted h2 {
+        font-family: bask-header;
+        font-size: 3.5em;
+        margin: 0;
+    }
+    .content-inverted-p {
+        font-family: bask-normal;
+        padding: 0;
+        font-size: 1.2em;
+    }
+    .projects-content {
+        width: 90%;
+        margin-top: 5px;
+    }
+    .content-inverted-p pre{
+        position: relative;
+        width: 33%;
+        color: rgba(213, 216, 220, 1);
+        list-style: none;
+        margin: 0; padding: 0;
+        padding-top: 5%;
+        height: 90%;
+        float: left;
+        font-family: bask-normal;
+    }
+    .classes-type {
+        font-size: 1.5em;
+        text-decoration: underline;
+        margin-left: 30%;
+    }
+
+    #skills {
+        background-color: rgba(189, 195, 199, 1);
+        margin: 0; padding: 0;
+        position: relative;
+    }
+    .skills-container {
+        position: absolute;
+        width: 70%;
+        height: 600px;
+        left: -550px; top: 150px;
+        background-color: rgba(255, 255, 255, 0.0);
+        transition: transform 2s, background-color 4s, ease;
+        -webkit-transition: transform 2s, background-color 4s, ease;
+        box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3); 
+        cursor: default;
+    }
+    .in-view-skills {
+        transform: translateX(900px);
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+    .skills-bar {
+        height: 300px;
+        position: relative;
+        top: 20%;
+    }
+    .left-column {
+        width: 50%;
+        position: absolute;
+        left: 10%;
+    }
+    .right-column {
+        width: 50%;
+        position: absolute;
+        left: 50%
+    }
+    .skillOutline {
+            margin-top: -2%;
+            position: relative;
+            width: 70%;
+            height: 10px;
+            margin-left: 0%;
+            border-color: white;
+            background-color: white;
+            border-width: 2px;
+            border-radius: 0px;
+            border-style: solid;
+            display: block;
+    }
+    .skillText {
+            font-family: bask-normal;
+            font-size: 1.2em;
+            color: rgba(93, 109, 126, 1);
+    }
+    #pythonBar {
+                    position: absolute;
+                    width: 85%;
+                    height: 80%;
+                    top: 10%;
+                    border-radius: 0px;
+                    background-color: rgba(120, 144, 156, 1.0);
+                    animation: pyBar;
+                    animation-duration: 4s;
+    }
+    @keyframes pyBar {
+        from { width: 1%; }
+        to { width: 85%; }
+    }
+    #cBar {
+                    position: absolute;
+                    width: 75%;
+                    height: 80%;
+                    top: 10%;
+                    border-radius: 0px;
+                    background-color: rgba(120, 144, 156, 1.0);
+                    animation: cBar;
+                    animation-duration: 4s;
+    }
+    @keyframes cBar {
+        from { width: 1%; }
+        to { width: 75%; }
+    }
+    #arduinoBar {
+                    position: absolute;
+                    width: 50%;
+                    height: 80%;
+                    top: 10%;
+                    border-radius: 0px;
+                    background-color: rgba(120, 144, 156, 1.0);
+                    animation: arduinoBar;
+                    animation-duration: 4s;
+    }
+    @keyframes arduinoBar {
+        from { width: 1%; }
+        to { width: 50%; }
+    }
+    #sqlBar {
+                    position: absolute;
+                    width: 55%;
+                    height: 80%;
+                    top: 10%;
+                    border-radius: 0px;
+                    background-color: rgba(120, 144, 156, 1.0);
+                    animation: sqlBar;
+                    animation-duration: 4s;
+    }
+    @keyframes sqlBar {
+        from { width: 1%; }
+        to { width: 55%; }
+    }
+    #htmlcssBar {
+                    position: absolute;
+                    width: 90%;
+                    height: 80%;
+                    top: 10%;
+                    border-radius: 0px;
+                    background-color: rgba(120, 144, 156, 1.0);
+                    animation: htmlcssBar;
+                    animation-duration: 4s;
+    }
+    @keyframes htmlcssBar {
+        from { width: 1%; }
+        to { width: 90%; }
+    }
+    #jsBar {
+                    position: absolute;
+                    width: 70%;
+                    height: 80%;
+                    top: 10%;
+                    border-radius: 0px;
+                    background-color: rgba(120, 144, 156, 1.0);
+                    animation: jsBar;
+                    animation-duration: 4s;
+    }
+    @keyframes jsBar {
+        from { width: 1%; }
+        to { width: 70%; }
+    }
+    #adobesBar {
+                    position: absolute;
+                    width: 60%;
+                    height: 80%;
+                    top: 10%;
+                    border-radius: 0px;
+                    background-color: rgba(120, 144, 156, 1.0);
+                    animation: adobesBar;
+                    animation-duration: 4s;
+    }
+    @keyframes adobesBar {
+        from { width: 1%; }
+        to { width: 60%; }
+    }
+    #learnBar {
+                    position: absolute;
+                    width: 100%;
+                    height: 80%;
+                    top: 10%;
+                    border-radius: 0px;
+                    background-color: rgba(120, 144, 156, 1.0);
+                    animation: learnBar;
+                    animation-duration: 4s;
+    }
+    @keyframes learnBar {
+        from { width: 1%; }
+        to { width: 100%; }
+    }
+
+    #classes {
+        background-color: rgba(93, 109, 126, 1);
+        margin: 0; padding: 0;
+        position: relative;
+    }
+    .classes-container {
+        position: absolute;
+        width: 70%;
+        height: 600px;
+        left: 900px; top: 150px;
+        background-color: rgba(40, 55, 71, 0.0);
+        transition: transform 2s, background-color 4s, ease;
+        -webkit-transition: transform 2s, background-color 4s, ease;
+        box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3); 
+        cursor: default;
+    }
+    .in-view-classes {
+        transform: translateX(-550px);
+        background-color: rgba(40, 55, 71, 0.6);
+    }
+
+
+    #more {
+        background-color: rgba(189, 195, 199, 1);
+        margin: 0; padding: 0;
+        position: relative;
+    }
+    .content-more-contact {
+        padding: 30px;
+        background-color: rgba(255,255,255,0.3);
+        margin: 50px auto;
+        width: 100%;
+        font-size: 1.5em;
+    }
+    .content-more-links {
+        padding: 30px;
+        display: block;
+        background-color: rgba(255,255,255,0.3);
+        width: 100%;
+        position: relative;
+    }
+    .content-more-links p {
+        display: inline-block;
+        font-size: 1.7em;
+    }
+}
