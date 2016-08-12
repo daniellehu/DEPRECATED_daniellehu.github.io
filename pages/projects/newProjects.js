@@ -6,7 +6,8 @@ function projectsFunction(status) {
     
     
     if ($(window).innerWidth() < 992) {
-        $(".bg-img").css("width", "992px");
+        $("#bg").css("height", $(window).innerHeight());
+        $("#bg-color").css("height", $(window).innerHeight());
         $("#bg h1").css("width", $(window).innerWidth());
         $(".bottom-content").css("max-width", $(window).innerWidth());
         $(".top-about").css("height", $(".bg-img").css("height"));
@@ -14,11 +15,11 @@ function projectsFunction(status) {
         $("nav").css("height", $("section").css("height"));
     }
     else {
-        $(".bg-img").css("width", $(window).innerWidth());
+        $("#bg").css("height", $(window).innerHeight());
+        $("#bg-color").css("height", $(window).innerHeight());
         $(".bottom-content").css("max-width", "100%");
         $("#bg h1").css("width", $(window).innerWidth());
         $(".top-about").css("height", $(".bg-img").css("height"));
-        $("#bg").css("height", $(".bg-img").css("height"));
         $("nav").css("height", $("section").css("height"));
     }
     
@@ -31,6 +32,20 @@ function projectsFunction(status) {
             $(".section-elements").toggleClass("section-on");
             $(".bottom-content").toggleClass("bottom-content-on");
         });
+        
+        $(".project img").click(function() {
+            $(this).next().fadeIn(300);
+            if ($(window).innerWidth() > 992) {
+                $("html").css("overflow", "hidden");
+            }
+        });
+        $(".exit-popup").click(function() {
+           $(this).parent().fadeOut(300);
+            if ($(window).innerWidth() > 992) {
+                $("html").css("overflow", "auto");  
+            }
+        });
+        
     }
     
 }
