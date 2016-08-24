@@ -4,6 +4,8 @@ $(window).on('resize', function() {homeFunction("docResize")});
 var winHeight = $(document).innerHeight();
 var $window = $(window);
 var $animationContainer = $(".animation-container");
+var experiences_leftArr = [], experiences_rightArr = [$("#ysp"), $("#ece"), $("#hci"), $("#quad")], experiences_current = $("#ms");
+var contentID;
 
 function check_if_in_view() {
   var window_height = $window.height();
@@ -60,11 +62,46 @@ function homeFunction(status) {
         $("#more").css("height", winHeight);
     }
     
+    if ($window.innerWidth() < 600) {
+        $(".about-content h1").html("D.<span class='important'>HU</span>");
+        $(".about-content pre").html("Student @<br>Carnegie Mellon University <br>Class of 2018<br>" +
+                                     "Electrical and Computer Engineering<br><span class='important'>" +
+                                     "&</span> Human Computer Interaction<br><br>" +
+                                     "email: <span class='important'>daniellh@andrew.cmu.edu</span><br>" +
+                                     "website: <span><a class='important' target='_blank'" +
+                                     "href='http://www.daniellehu.com'>www.daniellehu.com</a></span></pre>");
+        $(".project-video").hide();
+        
+        $("#ms img").attr("src", "pages/experiences/img/microsoft-m.gif");
+        $("#quad img").attr("src", "pages/experiences/img/quadrotor-m.gif");
+        $("#hci img").attr("src", "pages/experiences/img/hcii-m.gif");
+        $("#ece img").attr("src", "pages/experiences/img/ece-m.gif");
+        $("#ysp img").attr("src", "pages/experiences/img/ysp-m.gif");
+    }
+    else {
+        $(".about-content h1").html("DANIELLE <span class='important'>HU</span>");
+        $(".about-content pre").html("Student @ Carnegie Mellon University | Class of 2018<br>" +
+                                     "                                                                   " +
+                                     "Electrical and Computer Engineering <span class='important'>&</span><br>" +
+                                     "                                                                   " +
+                                     "Human Computer Interaction<br><br><br>" +
+                                     "email: <span class='important'>daniellh@andrew.cmu.edu</span><br>" +
+                                     "website: <span><a class='important' target='_blank'" +
+                                     "href='http://www.daniellehu.com'>www.daniellehu.com</a></span></pre>");
+        $(".project-video").show();
+        $("#ms img").attr("src", "pages/experiences/img/microsoft.gif");
+        $("#quad img").attr("src", "pages/experiences/img/quadrotor.gif");
+        $("#hci img").attr("src", "pages/experiences/img/hcii.gif");
+        $("#ece img").attr("src", "pages/experiences/img/ece.gif");
+        $("#ysp img").attr("src", "pages/experiences/img/ysp.gif");
+    }
+    
     //Action commands
     if (status == "docReady") {
         
         $window.on('scroll resize', check_if_in_view);
         $window.trigger('scroll');
+        $("#experiences_left-arrow").hide();
         
         //https://paulund.co.uk/smooth-scroll-to-internal-links-with-jquery
         $('a[href^="#"]').on('click',function (e) {
@@ -80,5 +117,63 @@ function homeFunction(status) {
             });
         });
         
+        $("#experiences_right-arrow").click(function () {
+            var current, new_current;
+            current = experiences_current;
+            new_current = experiences_rightArr.pop();
+            
+            experiences_leftArr.push(current);
+            
+            current.addClass("card-hidden");
+            if (current.hasClass("card-unhidden")) {
+                current.removeClass("card-unhidden");
+            }
+            
+            if (experiences_rightArr.length === 0) {
+                $("#experiences_right-arrow").hide();
+            }
+            else {
+                $("#experiences_left-arrow").show();
+            }
+            
+            setTimeout(function () {
+                current.hide();
+            }, 500);
+            experiences_current = new_current;
+        });
+        $("#experiences_left-arrow").click(function () {
+            var current, new_current;
+            current = experiences_current;
+            new_current = experiences_leftArr.pop();
+            
+            experiences_rightArr.push(current);
+            
+            new_current.show();
+            experiences_current = new_current;
+            new_current.addClass("card-unhidden");
+            new_current.removeClass("card-hidden");
+            
+            // arrow logic
+            if (experiences_leftArr.length === 0) {
+                $("#experiences_left-arrow").hide();
+            }
+            else {
+                $("#experiences_right-arrow").show();
+            }
+        });
+        $(".card").click(function () {
+            contentID = "#" + $(this).attr("id") + "-content";
+            $(contentID).addClass("card-content_opened");
+            $("html, body").css("overflowY", "hidden");
+            $(".card-content_load2s, .card-content_load1s").css("animation-play-state", "running");
+            $(".card-content_load2s, .card-content_load1s").css("-webkit-animation-play-state", "running");
+        });
+        $(".card-x").click(function() {
+            $(contentID).removeClass("card-content_opened"); 
+            $("html, body").css("overflowY", "auto");
+        });
+    }
+    else if (status == "docResize") {
+    
     }
 }
