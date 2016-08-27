@@ -5,6 +5,7 @@ var winHeight = $(document).innerHeight();
 var $window = $(window);
 var $animationContainer = $(".animation-container");
 var experiences_leftArr = [], experiences_rightArr = [$("#ysp"), $("#ece"), $("#hci"), $("#quad")], experiences_current = $("#ms");
+var projects_leftArr = [], projects_rightArr = [$("#ezzy"), $("#piairno"), $("#snaps"), $("#philly"), $("#website")], projects_current = $("#wikigen");
 var contentID;
 
 function check_if_in_view() {
@@ -37,30 +38,6 @@ function check_if_in_view() {
 }
 
 function homeFunction(status) {
-    if ($window.innerHeight() < 853 && $window.innerWidth() >= 1388) {
-        $("#about").css("height", 853);
-        $("#experiences").css("height", 853);
-        $("#projects").css("height", 853);
-        $("#skills").css("height", 853);
-        $("#classes").css("height", 853);
-        $("#more").css("height", 853);
-    }
-    else if ($window.innerWidth() < 1388) {
-        $("#about").css("height", 853);
-        $("#experiences").css("height", 853);
-        $("#projects").css("height", 853);
-        $("#skills").css("height", 853);
-        $("#classes").css("height", 853);
-        $("#more").css("height", 853);
-    }
-    else {
-        $("#about").css("height", winHeight);
-        $("#experiences").css("height", winHeight);
-        $("#projects").css("height", winHeight);
-        $("#skills").css("height", winHeight);
-        $("#classes").css("height", winHeight);
-        $("#more").css("height", winHeight);
-    }
     
     if ($window.innerWidth() < 600) {
         $(".about-content h1").html("D.<span class='important'>HU</span>");
@@ -99,9 +76,28 @@ function homeFunction(status) {
     //Action commands
     if (status == "docReady") {
         
+        if (($window.innerHeight() < 853 && $window.innerWidth() >= 1388) || 
+            ($window.innerWidth() < 1388)) {
+            $("#about").css("height", 853);
+            $("#experiences").css("height", 853);
+            $("#projects").css("height", 853);
+            $("#skills").css("height", 853);
+            $("#classes").css("height", 853);
+            $("#more").css("height", 853);
+        }
+        else {
+            $("#about").css("height", winHeight);
+            $("#experiences").css("height", winHeight);
+            $("#projects").css("height", winHeight);
+            $("#skills").css("height", winHeight);
+            $("#classes").css("height", winHeight);
+            $("#more").css("height", winHeight);
+        }
+        
         $window.on('scroll resize', check_if_in_view);
         $window.trigger('scroll');
         $("#experiences_left-arrow").hide();
+        $("#projects_left-arrow").hide();
         
         //https://paulund.co.uk/smooth-scroll-to-internal-links-with-jquery
         $('a[href^="#"]').on('click',function (e) {
@@ -117,6 +113,7 @@ function homeFunction(status) {
             });
         });
         
+        // Card logic
         $("#experiences_right-arrow").click(function () {
             var current, new_current;
             current = experiences_current;
@@ -161,6 +158,50 @@ function homeFunction(status) {
                 $("#experiences_right-arrow").show();
             }
         });
+        $("#projects_right-arrow").click(function () {
+            var current, new_current;
+            current = projects_current;
+            new_current = projects_rightArr.pop();
+            
+            projects_leftArr.push(current);
+            
+            current.addClass("card-hidden");
+            if (current.hasClass("card-unhidden")) {
+                current.removeClass("card-unhidden");
+            }
+            
+            if (projects_rightArr.length === 0) {
+                $("#projects_right-arrow").hide();
+            }
+            else {
+                $("#projects_left-arrow").show();
+            }
+            
+            setTimeout(function () {
+                current.hide();
+            }, 500);
+            projects_current = new_current;
+        });
+        $("#projects_left-arrow").click(function () {
+            var current, new_current;
+            current = projects_current;
+            new_current = projects_leftArr.pop();
+            
+            projects_rightArr.push(current);
+            
+            new_current.show();
+            projects_current = new_current;
+            new_current.addClass("card-unhidden");
+            new_current.removeClass("card-hidden");
+            
+            // arrow logic
+            if (projects_leftArr.length === 0) {
+                $("#projects_left-arrow").hide();
+            }
+            else {
+                $("#projects_right-arrow").show();
+            }
+        });
         $(".card").click(function () {
             contentID = "#" + $(this).attr("id") + "-content";
             $(contentID).addClass("card-content_opened");
@@ -174,6 +215,22 @@ function homeFunction(status) {
         });
     }
     else if (status == "docResize") {
-    
+        /*if (($window.innerHeight() < 853 && $window.innerWidth() >= 1388) || 
+            ($window.innerWidth() < 1388)) {
+            $("#about").css("height", 853);
+            $("#experiences").css("height", 853);
+            $("#projects").css("height", 853);
+            $("#skills").css("height", 853);
+            $("#classes").css("height", 853);
+            $("#more").css("height", 853);
+        }
+        else {
+            $("#about").css("height", winHeight);
+            $("#experiences").css("height", winHeight);
+            $("#projects").css("height", winHeight);
+            $("#skills").css("height", winHeight);
+            $("#classes").css("height", winHeight);
+            $("#more").css("height", winHeight);
+        }*/
     }
 }

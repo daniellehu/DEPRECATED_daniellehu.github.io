@@ -105,9 +105,9 @@
     }
     .experiences-container {
         position: absolute;
-        width: 90%;
+        width: 98%;
         height: 600px;
-        left: 5%; top: 150px;
+        left: 1%; top: 150px;
         background-color: rgba(189, 195, 199, 1);
         cursor: default;
     }
@@ -373,10 +373,19 @@
         margin: 0; padding: 0;
         position: relative;
     }
+    .projects-container {
+        position: absolute;
+        width: 98%;
+        height: 600px;
+        left: 1%; top: 150px;
+        background-color: rgba(40, 55, 71, 1.0);
+        cursor: default;
+    }
     .projects-content b {
         text-decoration: underline;
         font-size: 1.2em;
     }
+    
     .content-inverted {
         color: rgba(213, 216, 220, 1);
         z-index: 1;
@@ -397,6 +406,31 @@
     .projects-content {
         width: 90%;
         margin-top: 5px;
+    }
+    
+    #projects_left-arrow {
+        position: absolute;
+        top: 83%;
+        font-size: 3rem;
+        color: black;
+        left: 50px;
+        cursor: pointer;
+        z-index: 10;
+    }
+    #projects_left-arrow:hover {
+        opacity: 0.5;
+    }
+    #projects_right-arrow {
+        position: absolute;
+        top: 83%;
+        font-size: 3rem;
+        color: black;
+        right: 50px;
+        cursor: pointer;
+        z-index: 10;
+    }
+    #projects_right-arrow:hover {
+        opacity: 0.5;
     }
 
     #skills {
@@ -1000,6 +1034,14 @@
         margin: 0; padding: 0;
         position: relative;
     }
+    .projects-container {
+        background-color: rgba(40, 55, 71, 1.0);
+        position: absolute;
+        width: 90%;
+        height: 600px;
+        left: 5%; top: 150px;
+        cursor: default;
+    }
     .projects-content b {
         text-decoration: underline;
         font-size: 1.2em;
@@ -1024,6 +1066,30 @@
     .projects-content {
         width: 90%;
         margin-top: 5px;
+    }
+    #projects_left-arrow {
+        position: absolute;
+        top: 83%;
+        font-size: 3rem;
+        color: black;
+        left: 50px;
+        cursor: pointer;
+        z-index: 10;
+    }
+    #projects_left-arrow:hover {
+        opacity: 0.5;
+    }
+    #projects_right-arrow {
+        position: absolute;
+        top: 83%;
+        font-size: 3rem;
+        color: black;
+        right: 50px;
+        cursor: pointer;
+        z-index: 10;
+    }
+    #projects_right-arrow:hover {
+        opacity: 0.5;
     }
 
     #skills {
@@ -1320,7 +1386,7 @@
         opacity: 0.5;
 
     }
-
+    
     #about {
         background-color: rgba(93, 109, 126, 1);
         margin: 0; padding: 0;
@@ -1405,7 +1471,7 @@
     .card {
         position: absolute;
         background-color: rgba(255,255,255,1.0);
-        box-shadow: 0px 0px 10px 0px rgba(189, 195, 199, 0.4);;
+        box-shadow: 0px 0px 10px 0px rgba(189, 195, 199, 0.4);
         top: 10%;
         left: 20%;
         width: 60%;
@@ -1644,6 +1710,15 @@
         margin: 0; padding: 0;
         position: relative;
     }
+    .projects-container {
+        position: absolute;
+        width: 70%;
+        height: 600px;
+        left: 350px; top: 150px;
+        background-color: rgba(40, 55, 71, 1.0);
+        box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+        cursor: default;
+    }
     .projects-content b {
         text-decoration: underline;
         font-size: 1.2em;
@@ -1685,6 +1760,30 @@
         font-size: 1.5em;
         text-decoration: underline;
         margin-left: 30%;
+    }
+    #projects_left-arrow {
+        position: absolute;
+        top: 43%;
+        font-size: 4rem;
+        color: white;
+        left: 25px;
+        cursor: pointer;
+        z-index: 10;
+    }
+    #projects_left-arrow:hover {
+        opacity: 0.5;
+    }
+    #projects_right-arrow {
+        position: absolute;
+        top: 43%;
+        font-size: 4rem;
+        color: white;
+        right: 25px;
+        cursor: pointer;
+        z-index: 10;
+    }
+    #projects_right-arrow:hover {
+        opacity: 0.5;
     }
 
     #skills {
