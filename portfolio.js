@@ -5,8 +5,10 @@ var winHeight = $(document).innerHeight();
 var $window = $(window);
 var $animationContainer = $(".animation-container");
 var experiences_leftArr = [], experiences_rightArr = [$("#ysp"), $("#ece"), $("#hci"), $("#quad")], experiences_current = $("#ms");
-var projects_leftArr = [], projects_rightArr = [$("#ezzy"), $("#piairno"), $("#snaps"), $("#philly"), $("#website")], projects_current = $("#wikigen");
+var projects_leftArr = [], projects_rightArr = [$("#ezzy"), $("#piairno"), $("#snaps"), $("#philly"), $("#website"), $("#earth")], projects_current = $("#wikigen");
 var contentID;
+var me = ["Undergraduate", "Developer", "Designer", "Photographer", "Foodie", "Hiker"];
+var meIndex = 0;
 
 function check_if_in_view() {
   var window_height = $window.height();
@@ -61,10 +63,11 @@ function homeFunction(status) {
                                      "                                                                   " +
                                      "Electrical and Computer Engineering <span class='important'>&</span><br>" +
                                      "                                                                   " +
-                                     "Human Computer Interaction<br><br><br>" +
-                                     "email: <span class='important'>daniellh@andrew.cmu.edu</span><br>" +
-                                     "website: <span><a class='important' target='_blank'" +
-                                     "href='http://www.daniellehu.com'>www.daniellehu.com</a></span></pre>");
+                                     "Human Computer Interaction<br>" + 
+                                     "                                                                   " +
+                                     "<span class='important' id='me'>" + me[meIndex] + "</span>" +
+                                     "<br><br>" +
+                                     "email: <span class='important'>daniellh@andrew.cmu.edu</span></pre>");
         $(".project-video").show();
         $("#ms img").attr("src", "pages/experiences/img/microsoft.gif");
         $("#quad img").attr("src", "pages/experiences/img/quadrotor.gif");
@@ -94,7 +97,19 @@ function homeFunction(status) {
             $("#more").css("height", winHeight);
         }
         
+        setInterval(function() {
+            if (meIndex + 1 == me.length) {
+                meIndex = 0;
+            }
+            else {
+                meIndex += 1;   
+            }
+            $("#me").html(me[meIndex]);
+        }, 2000);
         $window.on('scroll resize', check_if_in_view);
+        window.onbeforeunload = function(){
+            window.scrollTo(0,0);
+        }
         $window.trigger('scroll');
         $("#experiences_left-arrow").hide();
         $("#projects_left-arrow").hide();
@@ -215,22 +230,5 @@ function homeFunction(status) {
         });
     }
     else if (status == "docResize") {
-        /*if (($window.innerHeight() < 853 && $window.innerWidth() >= 1388) || 
-            ($window.innerWidth() < 1388)) {
-            $("#about").css("height", 853);
-            $("#experiences").css("height", 853);
-            $("#projects").css("height", 853);
-            $("#skills").css("height", 853);
-            $("#classes").css("height", 853);
-            $("#more").css("height", 853);
-        }
-        else {
-            $("#about").css("height", winHeight);
-            $("#experiences").css("height", winHeight);
-            $("#projects").css("height", winHeight);
-            $("#skills").css("height", winHeight);
-            $("#classes").css("height", winHeight);
-            $("#more").css("height", winHeight);
-        }*/
     }
 }

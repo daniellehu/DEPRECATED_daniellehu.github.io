@@ -23,17 +23,9 @@
         <div id="about">
             <div class="about-content">
                 <h2>hello, it&rsquo;s me.</h2>
-                <h1>DANIELLE <span class="important">HU</span></h1>
+                <h1><span class="important">HU</span></h1>
                 <div class="about-content-p">
-                <pre>Student @ Carnegie Mellon University | Class of 2018
-                                                                   Electrical and Computer Engineering <span class="important">&</span> 
-                                                                   Human Computer Interaction
-
-
-email: <span class="important">daniellh@andrew.cmu.edu</span>
-website: <span><a class="important" target="_blank"
-                href="http://www.daniellehu.com">www.daniellehu.com</a></span>
-                    </pre>
+                <pre></pre>
                 </div>
             </div>
             
@@ -396,10 +388,46 @@ website: <span><a class="important" target="_blank"
                         </p>
                     </div>
                 </div>
-                <div class="card" id="wikigen" style="z-index: 5">
+                <div class="card" id="wikigen" style="z-index: 6">
                     <h2>WIKIGEN</h2>
                     <h3>AUGUST 2015 &ndash; PRESENT</h3>
-                    <img src="pages/projects/img/wikigen.gif">
+                    <img src="pages/projects/img/Wikigen.gif">
+                </div>
+                <div class="card-content" id="earth-content" style="z-index: 25">
+                    <i class="card-x fa fa-times-circle-o fa-2x card-content_load1s"></i>
+                    <img class="card-content_icon card-content_load1s" src="pages/projects/img/earth-content.gif">
+                    <h2 class="card-content_load1s">MODEL OUR WORLD</h2>
+                    <h3 class="card-content_load1s">JULY 25 &ndash; 29, 2016</h3>
+                    <div class="card-content_title card-content_load2s">HACKATHON PROJECT</div>
+                    <div class="card-content_p">
+                        <p class="card-content_load2s">
+                            <a class="content-a" target="_blank" href="http://earthmodel.azurewebsites.net">Model Our World</a> was a project that aimed to promote interests combining big data, earth sciences, modeling (including machine learning), and cloud services. Our group created a web application as part of Microsoft&rsquo;s global hackathon event <span class="important">//OneWeek</span>. The project focuses on taking various large public datasets related to earth sciences (i.e. ocean temperatures, surface temperatures, precipitation, etc.) and providing an interface for users to interact with to display various data models. The majority of the technologies used for the project were Microsoft related (Bing Maps, Azure ML, Azure Web Services, Azure Blob Storage, SQL Azure, C#, etc.)<br><br>
+                            &bull; Developed the frontend visualizations using Cesium&rsquo;s Javascript Library<br>
+                            &bull; Deployed web application to Azure services<br>
+                            &bull; Participated in the planning and implementation of the system&rsquo;s architecture<br>
+                            &bull; Worked closely on a team of six consisting of various full time employees and interns to plan and execute the project
+                        </p>
+                        <p class="card-content_load2s">
+                            <b>PROJECT BREAKDOWN</b><br>
+                            The week before <span class="important">//OneWeek</span> was largely spent planning and discussing ideas related to our project. We needed to prepare beforehand in order to start uploading large datasets into Azure Cloud Services. Once we decided on a set of variables we wanted to measure over time, we uploaded large packets of data into Azure Blob Storage. The days before the hackathon started were spent interpreting those blobs and parsing them into more usable formats. Once they were ready, we put them into Azure SQL Tables.<br><br>
+                            A large part of this project was creating a RESTful service that could be reused by programmers and scientists easily. We spent a large amount of time developing this API to be adaptable and easy to use so that it can be recycled for years to come. The service was developed in C# and acts as a middleman between our backend servers and the frontend displays.<br><br>
+                            Another part that was focused on was an attempt to provide a model for our users using machine learning. Because we had such large datasets, we planned to utilize Microsoft technologies to produce a model that would map out possible outcomes of our Earth Model. We dived into published research papers and Azure ML in order to better understand the model to create, but weren&rsquo;t able to complete this step by the end of the hackathon.<br><br>
+                        </p>
+                        <p class="card-content_load2s">
+                            <i>Once the hackathon started, our work divided into working on backend, REST API, frontend, and modeling</i><br>
+                            <img src="pages/projects/img/earth.3.PNG"><br><br>
+                            <i>Example of Model Our World displaying surface temperatures</i><br>
+                            <img src="pages/projects/img/earth.1.PNG"><br><br>
+                            <i>Example of Model Our World displaying ocean temperatures</i><br>
+                            <img src="pages/projects/img/earth.2.PNG"><br><br>
+                        </p>
+                        
+                    </div>
+                </div>
+                <div class="card" id="earth" style="z-index: 5">
+                    <h2>MODEL OUR WORLD</h2>
+                    <h3>JULY 25 &ndash; 29, 2016</h3>
+                    <img src="pages/projects/img/earth.gif">
                 </div>
                 <div class="card-content" id="website-content" style="z-index: 25">
                     <i class="card-x fa fa-times-circle-o fa-2x card-content_load1s"></i>
@@ -431,7 +459,7 @@ website: <span><a class="important" target="_blank"
                         </p>
                         <p class="card-content_load2s">
                             <b>VERSION ONE</b><br>
-                            The idea of this website was to be as informal, yet personal, as I could be. I didn&rsquo;t plan for the website to focus on presenting myself in a professional setting. Instead, the main goal was to simply focus on familiarizing myself with HTML, CSS, and JS.<br><br>
+                            The idea of <a class="content-a" target="_blank" href="http://www.daniellehu.com/personal">this</a> website was to be as informal, yet personal, as I could be. I didn&rsquo;t plan for the website to focus on presenting myself in a professional setting. Instead, the main goal was to simply focus on familiarizing myself with HTML, CSS, and JS.<br><br>
                             <i>About page&rsquo;s description (notice the copious amounts of puns made)</i><br>
                             <img src="pages/projects/img/website.6.PNG">
                         </p>
@@ -572,8 +600,8 @@ website: <span><a class="important" target="_blank"
                     <div class="card-content_title card-content_load2s">CLASS PROJECT</div>
                     <div class="card-content_p">
                         <p class="card-content_load2s">
-                            Ezzy World is a <span class="important">simple life-simulating game</span> created with Python's TKinter and Adobe Illustrator. The project was created for Carnegie Mellon University's <i> Fundamentals of Programming</i> course (15-112). Project source code can be found <a target="_blank" class="content-a" href="https://github.com/daniellehu/Ezzy-World">here.</a><br><br>
-                            &bull; Developed the logic and animations using Python's Tkinter and Object Oriented Programming<br>
+                            Ezzy World is a <span class="important">simple life-simulating game</span> created with Python&rsquo;s TKinter and Adobe Illustrator. The project was created for Carnegie Mellon University&rsquo;s <i> Fundamentals of Programming</i> course (15-112). Project source code can be found <a target="_blank" class="content-a" href="https://github.com/daniellehu/Ezzy-World">here.</a><br><br>
+                            &bull; Developed the logic and animations using Python&rsquo;s Tkinter and Object Oriented Programming<br>
                             &bull; Designed and animated Ezzy World using Adobe Illustrator<br>
                             &bull; Researched the market for appropriate approaches to this game<br>
                             &bull; Implemented a simple, yet enjoyable UI and UX<br>
@@ -584,18 +612,18 @@ website: <span><a class="important" target="_blank"
                         </p>
                         <p class="card-content_load2s">
                             <b>BREAKDOWN OF GAME</b><br>
-                            Ezzy World isn't that technically challenging. However, it is a project that I created from scratch in my early stages of learning how to program. All of the animations you see are drawn using Adobe Illustrator and a Bamboo tablet. The motions of the animations are created by switching two files back and forth to create movement within the game.<br><br>
+                            Ezzy World isn&rsquo;t that technically challenging. However, it is a project that I created from scratch in my early stages of learning how to program. All of the animations you see are drawn using Adobe Illustrator and a Bamboo tablet. The motions of the animations are created by switching two files back and forth to create movement within the game.<br><br>
                             <i>Used Adobe Illustrator in order to manipulate vectors easily to create the animations</i><br>
                             <img src="pages/projects/img/Ezzy.6.png"><br><br>
                         </p>
                         <p class="card-content_load2s">
-                            The project uses Object Oriented Programming in Python in order to keep track of 3 main classes: <br>(1) The Tkinter application that runs the game and the overall logic of the game [for example: the player's money, a list of instances of Ezzies, etc.], <br>(2) Furniture [each furniture object kept track of its own coordinates], <br>(3) Ezzies [which tracked coordinates, health statuses, name, etc.]
+                            The project uses Object Oriented Programming in Python in order to keep track of 3 main classes: <br>(1) The Tkinter application that runs the game and the overall logic of the game [for example: the player&rsquo;s money, a list of instances of Ezzies, etc.], <br>(2) Furniture [each furniture object kept track of its own coordinates], <br>(3) Ezzies [which tracked coordinates, health statuses, name, etc.]
                         </p>
                         <p class="card-content_load2s">
                             In order to set up autonomy with the Ezzies, the Python Random library was heavily used. A lot of the logic that went behind an Ezzy moving on its own, or performing actions on its own came from a simple "random.randint(low, high)" command. The program would check every few seconds or so whether or not the returned random value from random.randint equaled 0. Meaning if random.randint(0, 20) was used, there was a 1 out of 20 chance that an action would be "autonomously" done. This randomization came into play in the movement of Ezzies, whether or not an Ezzy completed an action with a furniture object in the room, and even in the "Get Twerk" mini-game where randomly generated strings were produced.
                         </p>
                         <p class="card-content_load2s">
-                            Other features of Ezzy World includes loading/saving, Ezzies aging over time, Ezzies dying if not treated properly, Ezzies changing animations if dissatisfied, etc. The project was created over a month's span, and was a great experience in terms of learning how to design/implement a full-stack project.
+                            Other features of Ezzy World includes loading/saving, Ezzies aging over time, Ezzies dying if not treated properly, Ezzies changing animations if dissatisfied, etc. The project was created over a month&rsquo;s span, and was a great experience in terms of learning how to design/implement a full-stack project.
                         </p>
                         <p class="card-content_load2s">
                             <b>GAMEPLAY PICTURES</b><br>
@@ -711,6 +739,10 @@ website: <span><a class="important" target="_blank"
                     <p>Linkedin: <a href="https://www.linkedin.com/in/daniellehu" 
                                     target="_blank">
                         <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </p>
+                    <p>Flickr: <a href="https://www.flickr.com/photos/daniellehu" 
+                                    target="_blank">
+                        <i class="fa fa-flickr" aria-hidden="true"></i></a>
                     </p>
                     <p>Resume: <a href="pages/about/Resume.pdf" target="_blank">
                         <i class="fa fa-user" aria-hidden="true"></i>

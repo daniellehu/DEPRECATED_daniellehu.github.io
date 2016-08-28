@@ -767,7 +767,7 @@
     .experiences-container {
         position: absolute;
         width: 90%;
-        height: 600px;
+        height: 70%;
         left: 5%; top: 150px;
         background-color: rgba(189, 195, 199, 1);
         cursor: default;
@@ -1038,7 +1038,7 @@
         background-color: rgba(40, 55, 71, 1.0);
         position: absolute;
         width: 90%;
-        height: 600px;
+        height: 70%;
         left: 5%; top: 150px;
         cursor: default;
     }
@@ -1354,6 +1354,23 @@
         cursor: default;
         z-index: 5;
     }
+        nav ul {
+        position: relative;
+        left: 25px;
+        top: 20%;
+        list-style-type: none;
+        width: 90%;
+    }
+    nav ul li {
+        margin: 10px 0px;
+        opacity: 0;
+        -webkit-animation: intro 2s ease-in-out 3s forwards;
+	    animation: intro 2s ease-in-out 3s forwards;
+    }
+    nav ul li:hover {
+        opacity: 0.5;
+
+    }
 
     .arrow-down {
         position: absolute;
@@ -1370,21 +1387,46 @@
     .important {
         color: rgba(217, 136, 128, 1);
     }
-
-    nav ul {
-        position: relative;
-        left: 25px;
-        top: 20%;
-        list-style-type: none;
-        width: 90%;
+    #me {
+        -webkit-animation: me 2s infinite forwards;
+	    animation: me 2s infinite forwards;
+        display: inline-block;
     }
-
-    nav ul li {
-        margin: 10px 0px;
+    @-webkit-keyframes me {
+        0% {
+            transform: translateY(-10px);
+            opacity: 0;
+        }
+        25% {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+        75% {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(10px);
+            opacity: 0;
+        }
     }
-    nav ul li:hover {
-        opacity: 0.5;
-
+    @keyframes me {
+        0% {
+            transform: translateY(-10px);
+            opacity: 0;
+        }
+        25% {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+        75% {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(10px);
+            opacity: 0;
+        }
     }
     
     #about {
@@ -1404,11 +1446,16 @@
         font-size: 3.5em;
         margin: 0; padding: 0;
         font-family: bask-header;
+        -webkit-animation: intro 2s forwards;
+	    animation: intro 2s forwards;
     }
     .about-content h1 {
         font-size: 12em;
         margin: 0; padding: 0;
         font-family: headers-font;
+        opacity: 0;
+        -webkit-animation: intro 2s ease-in-out 1s forwards;
+	    animation: intro 2s ease-in-out 1s forwards;
     }
     .about-content pre {
         font-family: bask-normal;
@@ -1418,6 +1465,29 @@
     }
     .about-content-p {
         margin-top: 100px;
+        opacity: 0;
+        -webkit-animation: intro 2s ease-in-out 2s forwards;
+	    animation: intro 2s ease-in-out 2s forwards;
+    }
+    @-webkit-keyframes intro {
+        from {
+            transform: translateY(-10px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0px);
+            opacity: 1.0;
+        }
+    }
+    @keyframes intro {
+        from {
+            transform: translateY(-10px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0px);
+            opacity: 1.0;
+        }
     }
 
     #experiences {
@@ -1428,7 +1498,7 @@
     .experiences-container {
         position: absolute;
         width: 70%;
-        height: 600px;
+        height: 70%;
         left: 350px; top: 150px;
         background-color: rgba(255, 255, 255, 0.6);
         box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
@@ -1713,7 +1783,7 @@
     .projects-container {
         position: absolute;
         width: 70%;
-        height: 600px;
+        height: 70%;
         left: 350px; top: 150px;
         background-color: rgba(40, 55, 71, 1.0);
         box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
