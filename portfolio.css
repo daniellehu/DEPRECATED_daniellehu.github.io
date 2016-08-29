@@ -64,7 +64,7 @@
     nav {
         display: none;
     }
-
+    
     #about {
         background-color: rgba(93, 109, 126, 1);
         margin: 0; padding: 0;
@@ -700,32 +700,51 @@
     }
 
     nav {
-        position: fixed;
-        left: 0; top: 0;
-        height: 300px;
-        width: 100%;
-        font-family: nav-font; font-size: 1.4em;
-        background-color: rgba(171, 178, 185, 0.8);
-        cursor: default;
-        z-index: 5;
         display: none;
     }
-    nav ul {
-        position: relative;
-        left: 25px;
-        top: 20px;
-        list-style-type: none;
-        width: 90%;
-    }
 
-    nav ul li {
-        margin: 10px 0px;
+    #me {
+        -webkit-animation: me 2s infinite forwards;
+	    animation: me 2s infinite forwards;
+        display: inline-block;
     }
-    nav ul li:hover {
-        opacity: 0.5;
-
+    @-webkit-keyframes me {
+        0% {
+            transform: translateY(-10px);
+            opacity: 0;
+        }
+        25% {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+        75% {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(10px);
+            opacity: 0;
+        }
     }
-
+    @keyframes me {
+        0% {
+            transform: translateY(-10px);
+            opacity: 0;
+        }
+        25% {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+        75% {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(10px);
+            opacity: 0;
+        }
+    }
+    
     #about {
         background-color: rgba(93, 109, 126, 1);
         margin: 0; padding: 0;

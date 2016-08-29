@@ -230,5 +230,6 @@ function homeFunction(status) {
         });
     }
     else if (status == "docResize") {
+    
     }
 }
