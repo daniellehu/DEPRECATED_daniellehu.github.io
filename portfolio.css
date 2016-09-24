@@ -1206,9 +1206,9 @@
         from { width: 1%; }
         to { width: 50%; }
     }
-    #sqlBar {
+    #javaBar {
                     position: absolute;
-                    width: 55%;
+                    width: 75%;
                     height: 80%;
                     top: 10%;
                     border-radius: 0px;
@@ -1216,7 +1216,7 @@
                     animation: sqlBar;
                     animation-duration: 4s;
     }
-    @keyframes sqlBar {
+    @keyframes javaBar {
         from { width: 1%; }
         to { width: 55%; }
     }
@@ -1970,9 +1970,9 @@
         from { width: 1%; }
         to { width: 50%; }
     }
-    #sqlBar {
+    #javaBar {
                     position: absolute;
-                    width: 55%;
+                    width: 75%;
                     height: 80%;
                     top: 10%;
                     border-radius: 0px;
@@ -1980,7 +1980,7 @@
                     animation: sqlBar;
                     animation-duration: 4s;
     }
-    @keyframes sqlBar {
+    @keyframes javaBar {
         from { width: 1%; }
         to { width: 55%; }
     }
