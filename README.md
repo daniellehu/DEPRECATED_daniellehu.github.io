@@ -38,3 +38,7 @@ Welcome to the personal website of Danielle Hu. Twas coded by yours truly.
   
   Thanks for reading! Since this was my personal website (project), my 
   documentation/comments/style overall isn't great.
+  
+  
+  Value:
+  daniellehu.github.io.
