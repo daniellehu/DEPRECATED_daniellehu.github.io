@@ -39,6 +39,9 @@ Welcome to the personal website of Danielle Hu. Twas coded by yours truly.
   Thanks for reading! Since this was my personal website (project), my 
   documentation/comments/style overall isn't great.
   
+  CNAME RECORD
+  Value: daniellehu.github.io. ; TTL 30 min
   
-  Value:
-  daniellehu.github.io.
+  A RECORD
+  Host: @ ; Value: 192.30.252.153 ; TTL 30 min
+  Host: @ ; Value: 192.30.252.154 ; TTL 30 min
