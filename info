@@ -1,0 +1,6 @@
+  CNAME RECORD
+  Value: daniellehu.github.io. ; TTL 30 min
+  
+  A RECORD
+  Host: @ ; Value: 192.30.252.153 ; TTL 30 min
+  Host: @ ; Value: 192.30.252.154 ; TTL 30 min
